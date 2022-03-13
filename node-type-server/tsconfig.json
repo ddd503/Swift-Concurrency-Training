@@ -1,18 +1,14 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
+    "target": "ES5",
     "module": "commonjs",
-    "moduleResolution": "node",
-    "types": [
-      "node"
-    ],
     "sourceMap": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
     "strict": true,
-    "skipLibCheck": true
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "execlude" : [
-      "node_modules"
-  ]
+  "include": ["src/**/*"]
 }
