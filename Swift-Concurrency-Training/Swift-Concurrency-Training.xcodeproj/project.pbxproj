@@ -51,9 +51,9 @@
 		4557ADC927EE971C00D070BA /* Swift-Concurrency-Training */ = {
 			isa = PBXGroup;
 			children = (
-				4557ADCA27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift */,
-				4557ADCC27EE971C00D070BA /* ContentView.swift */,
-				4557ADCE27EE971D00D070BA /* Assets.xcassets */,
+				45EFCA7A27FFD3500087B8CF /* Presentation */,
+				45EFCA7927FFD3490087B8CF /* Data */,
+				45EFCA7B27FFD3920087B8CF /* DataSource */,
 				4557ADD027EE971D00D070BA /* Preview Content */,
 			);
 			path = "Swift-Concurrency-Training";
@@ -65,6 +65,30 @@
 				4557ADD127EE971D00D070BA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		45EFCA7927FFD3490087B8CF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		45EFCA7A27FFD3500087B8CF /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				4557ADCA27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift */,
+				4557ADCC27EE971C00D070BA /* ContentView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		45EFCA7B27FFD3920087B8CF /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				4557ADCE27EE971D00D070BA /* Assets.xcassets */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
