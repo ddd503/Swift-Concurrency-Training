@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+enum PhotoListAction: Equatable {
+    case onAppear
+}
