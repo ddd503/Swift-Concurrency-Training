@@ -10,13 +10,6 @@
 		4557ADCB27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4557ADCA27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift */; };
 		4557ADCF27EE971D00D070BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4557ADCE27EE971D00D070BA /* Assets.xcassets */; };
 		4557ADD227EE971D00D070BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4557ADD127EE971D00D070BA /* Preview Assets.xcassets */; };
-		45B4F52B280FC7A7005A7EE1 /* PhotoInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B4F52A280FC7A7005A7EE1 /* PhotoInfoView.swift */; };
-		45B4F52E281E9BEB005A7EE1 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 45B4F52D281E9BEB005A7EE1 /* ComposableArchitecture */; };
-		45B4F530281FD6DD005A7EE1 /* PhotoListView+Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B4F52F281FD6DD005A7EE1 /* PhotoListView+Reducer.swift */; };
-		45B4F532281FDB52005A7EE1 /* PhotoListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B4F531281FDB52005A7EE1 /* PhotoListState.swift */; };
-		45B4F534281FDB71005A7EE1 /* PhotoListAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B4F533281FDB71005A7EE1 /* PhotoListAction.swift */; };
-		45B4F5362824FFC5005A7EE1 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B4F5352824FFC5005A7EE1 /* AppEnvironment.swift */; };
-		45EFCA802803A3250087B8CF /* PhotoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EFCA7F2803A3250087B8CF /* PhotoListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,12 +17,6 @@
 		4557ADCA27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Concurrency_TrainingApp.swift; sourceTree = "<group>"; };
 		4557ADCE27EE971D00D070BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4557ADD127EE971D00D070BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		45B4F52A280FC7A7005A7EE1 /* PhotoInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfoView.swift; sourceTree = "<group>"; };
-		45B4F52F281FD6DD005A7EE1 /* PhotoListView+Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoListView+Reducer.swift"; sourceTree = "<group>"; };
-		45B4F531281FDB52005A7EE1 /* PhotoListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListState.swift; sourceTree = "<group>"; };
-		45B4F533281FDB71005A7EE1 /* PhotoListAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListAction.swift; sourceTree = "<group>"; };
-		45B4F5352824FFC5005A7EE1 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
-		45EFCA7F2803A3250087B8CF /* PhotoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +24,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45B4F52E281E9BEB005A7EE1 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,8 +50,6 @@
 			isa = PBXGroup;
 			children = (
 				4557ADCA27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift */,
-				45B4F5352824FFC5005A7EE1 /* AppEnvironment.swift */,
-				45EFCA7E2803A2F40087B8CF /* PhotoList */,
 				45EFCA7B27FFD3920087B8CF /* DataSource */,
 				4557ADD027EE971D00D070BA /* Preview Content */,
 			);
@@ -88,18 +72,6 @@
 			path = DataSource;
 			sourceTree = "<group>";
 		};
-		45EFCA7E2803A2F40087B8CF /* PhotoList */ = {
-			isa = PBXGroup;
-			children = (
-				45EFCA7F2803A3250087B8CF /* PhotoListView.swift */,
-				45B4F52A280FC7A7005A7EE1 /* PhotoInfoView.swift */,
-				45B4F52F281FD6DD005A7EE1 /* PhotoListView+Reducer.swift */,
-				45B4F531281FDB52005A7EE1 /* PhotoListState.swift */,
-				45B4F533281FDB71005A7EE1 /* PhotoListAction.swift */,
-			);
-			path = PhotoList;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,7 +89,6 @@
 			);
 			name = "Swift-Concurrency-Training";
 			packageProductDependencies = (
-				45B4F52D281E9BEB005A7EE1 /* ComposableArchitecture */,
 			);
 			productName = "Swift-Concurrency-Training";
 			productReference = 4557ADC727EE971C00D070BA /* Swift-Concurrency-Training.app */;
@@ -148,7 +119,6 @@
 			);
 			mainGroup = 4557ADBE27EE971C00D070BA;
 			packageReferences = (
-				45B4F52C281E9BEB005A7EE1 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = 4557ADC827EE971C00D070BA /* Products */;
 			projectDirPath = "";
@@ -176,13 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45B4F5362824FFC5005A7EE1 /* AppEnvironment.swift in Sources */,
-				45B4F532281FDB52005A7EE1 /* PhotoListState.swift in Sources */,
-				45B4F52B280FC7A7005A7EE1 /* PhotoInfoView.swift in Sources */,
 				4557ADCB27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift in Sources */,
-				45B4F534281FDB71005A7EE1 /* PhotoListAction.swift in Sources */,
-				45B4F530281FD6DD005A7EE1 /* PhotoListView+Reducer.swift in Sources */,
-				45EFCA802803A3250087B8CF /* PhotoListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,25 +349,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		45B4F52C281E9BEB005A7EE1 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.9.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		45B4F52D281E9BEB005A7EE1 /* ComposableArchitecture */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 45B4F52C281E9BEB005A7EE1 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
-			productName = ComposableArchitecture;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4557ADBF27EE971C00D070BA /* Project object */;
 }
