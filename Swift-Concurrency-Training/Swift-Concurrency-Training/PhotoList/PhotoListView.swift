@@ -24,6 +24,8 @@ struct PhotoListView: View {
 
 struct PhotoListView_Previews: PreviewProvider {
     static var previews: some View {
-        PhotoListView(store: .init(initialState: PhotoListState(), reducer: PhotoListView.reducer(), environment: AppEnvironment()))
+        PhotoListView(store: .init(initialState: PhotoListState(),
+                                   reducer: PhotoListView.reducer(),
+                                   environment: AppEnvironment()))
     }
 }
