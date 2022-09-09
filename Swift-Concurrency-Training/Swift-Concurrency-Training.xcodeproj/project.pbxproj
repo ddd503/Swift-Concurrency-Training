@@ -10,6 +10,7 @@
 		4557ADCB27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4557ADCA27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift */; };
 		4557ADCF27EE971D00D070BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4557ADCE27EE971D00D070BA /* Assets.xcassets */; };
 		4557ADD227EE971D00D070BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4557ADD127EE971D00D070BA /* Preview Assets.xcassets */; };
+		45F3628928CB166E00C0F206 /* DataListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3628828CB166E00C0F206 /* DataListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +18,7 @@
 		4557ADCA27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Concurrency_TrainingApp.swift; sourceTree = "<group>"; };
 		4557ADCE27EE971D00D070BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4557ADD127EE971D00D070BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		45F3628828CB166E00C0F206 /* DataListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,9 @@
 			isa = PBXGroup;
 			children = (
 				4557ADCA27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift */,
+				45F3628328B9D25700C0F206 /* View */,
+				45F3628428B9D26200C0F206 /* ViewModel */,
+				45F3628528B9D27D00C0F206 /* Model */,
 				45EFCA7B27FFD3920087B8CF /* DataSource */,
 				4557ADD027EE971D00D070BA /* Preview Content */,
 			);
@@ -70,6 +75,28 @@
 				4557ADCE27EE971D00D070BA /* Assets.xcassets */,
 			);
 			path = DataSource;
+			sourceTree = "<group>";
+		};
+		45F3628328B9D25700C0F206 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				45F3628828CB166E00C0F206 /* DataListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		45F3628428B9D26200C0F206 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		45F3628528B9D27D00C0F206 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45F3628928CB166E00C0F206 /* DataListView.swift in Sources */,
 				4557ADCB27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
