@@ -6,14 +6,15 @@
 //
 
 import SwiftUI
+import Combine
 
 struct DataListView: View {
-    @State var dataList: [String]
+    @StateObject var viewModel = DataListViewModel()
     
     var body: some View {
         ScrollView {
             LazyVStack(alignment: .leading) {
-                ForEach(dataList, id: \.self) { data in
+                ForEach(viewModel.dataList, id: \.self) { data in
                     Text(data)
                 }
             }
@@ -24,9 +25,6 @@ struct DataListView: View {
 
 struct DataListView_Previews: PreviewProvider {
     static var previews: some View {
-        DataListView(dataList: [
-            "テスト1",
-            "テスト2",
-            "テスト3"])
+        DataListView()
     }
 }
