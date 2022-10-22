@@ -7,7 +7,11 @@
 
 import Foundation
 
-final class APIClient {
+protocol APIClient {
+    func perform() async throws -> APIResponse
+}
+
+final class APIClientImpl: APIClient {
     let session: URLSession
 
     init(session: URLSession = URLSession.shared) {
@@ -16,6 +20,6 @@ final class APIClient {
 
     func perform() async throws -> APIResponse {
         // WIP
-        APIResponse()
+        APIResponse.mock()
     }
 }

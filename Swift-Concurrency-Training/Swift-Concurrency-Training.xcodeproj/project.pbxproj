@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4518F4CC2903BD2D00AAC676 /* APIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4518F4CB2903BD2D00AAC676 /* APIRepository.swift */; };
 		4557ADCB27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4557ADCA27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift */; };
 		4557ADCF27EE971D00D070BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4557ADCE27EE971D00D070BA /* Assets.xcassets */; };
 		4557ADD227EE971D00D070BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4557ADD127EE971D00D070BA /* Preview Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4518F4CB2903BD2D00AAC676 /* APIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRepository.swift; sourceTree = "<group>"; };
 		4557ADC727EE971C00D070BA /* Swift-Concurrency-Training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Concurrency-Training.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4557ADCA27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Concurrency_TrainingApp.swift; sourceTree = "<group>"; };
 		4557ADCE27EE971D00D070BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		45F3628528B9D27D00C0F206 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4518F4CB2903BD2D00AAC676 /* APIRepository.swift */,
 				45C7CBE128FA56D800B31B42 /* APIClient.swift */,
 				45C7CBE328FA58DE00B31B42 /* APIResponse.swift */,
 			);
@@ -184,6 +187,7 @@
 			files = (
 				45F3628928CB166E00C0F206 /* DataListView.swift in Sources */,
 				45F3628B28D55B9F00C0F206 /* DataListViewModel.swift in Sources */,
+				4518F4CC2903BD2D00AAC676 /* APIRepository.swift in Sources */,
 				4557ADCB27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift in Sources */,
 				45C7CBE428FA58DE00B31B42 /* APIResponse.swift in Sources */,
 				45C7CBE228FA56D900B31B42 /* APIClient.swift in Sources */,
