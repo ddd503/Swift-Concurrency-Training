@@ -7,8 +7,7 @@
 
 import Foundation
 
-// APIレスポンス決めてCodableでパースする
-struct APIResponse {
+struct UserAPIResponse: Decodable {
     let users: [User]
 }
 
@@ -22,10 +21,10 @@ struct User: Decodable {
     }
 }
 
-extension APIResponse {
-    static func mock() -> APIResponse {
+extension UserAPIResponse {
+    static func mock() -> UserAPIResponse {
         let id = User.ID(rawValue: 0)
         let user = User(id: id, name: "name", birthDay: "1992/05/31")
-        return APIResponse(users: [user])
+        return UserAPIResponse(users: [user])
     }
 }

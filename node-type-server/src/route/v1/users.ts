@@ -2,6 +2,7 @@ import express from 'express';
 
 const router = express.Router();
 
+// http://localhost:3000/v1/usersでアクセスできる
 // GETリクエスト
 router.get('/', (req: express.Request, res: express.Response) => {
   try {

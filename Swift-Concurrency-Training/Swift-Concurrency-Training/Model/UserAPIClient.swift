@@ -7,11 +7,13 @@
 
 import Foundation
 
-protocol APIClient {
+protocol UserAPIClient {
+    associatedtype Response
+
     func perform() async throws -> APIResponse
 }
 
-final class APIClientImpl: APIClient {
+final class APIClientImpl: UserAPIClient {
     let session: URLSession
 
     init(session: URLSession = URLSession.shared) {

@@ -1,5 +1,5 @@
 //
-//  APIRepository.swift
+//  UserRepository.swift
 //  Swift-Concurrency-Training
 //
 //  Created by kawaharadai on 2022/10/22.
@@ -7,11 +7,11 @@
 
 import Foundation
 
-protocol APIRepository {
+protocol UserRepository {
     func users() async throws -> [User]
 }
 
-struct APIRepositoryImpl: APIRepository {
+struct APIRepositoryImpl: UserRepository {
     private let apiClient: APIClient
 
     init(apiClient: APIClient) {
