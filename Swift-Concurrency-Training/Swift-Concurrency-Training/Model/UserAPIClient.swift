@@ -8,20 +8,18 @@
 import Foundation
 
 protocol UserAPIClient {
-    associatedtype Response
-
-    func perform() async throws -> APIResponse
+    func perform() async throws -> UserAPIResponse
 }
 
-final class APIClientImpl: UserAPIClient {
+final class UserAPIClientImpl: UserAPIClient {
     let session: URLSession
 
     init(session: URLSession = URLSession.shared) {
         self.session = session
     }
 
-    func perform() async throws -> APIResponse {
+    func perform() async throws -> UserAPIResponse {
         // WIP
-        APIResponse.mock()
+        UserAPIResponse.mock()
     }
 }

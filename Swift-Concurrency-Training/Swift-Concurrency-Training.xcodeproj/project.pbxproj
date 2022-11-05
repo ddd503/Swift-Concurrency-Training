@@ -7,29 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4518F4CC2903BD2D00AAC676 /* APIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4518F4CB2903BD2D00AAC676 /* APIRepository.swift */; };
+		4518F4CC2903BD2D00AAC676 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4518F4CB2903BD2D00AAC676 /* UserRepository.swift */; };
+		4518F4DC29166B3100AAC676 /* UserAPIClientImplTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4518F4DB29166B3100AAC676 /* UserAPIClientImplTest.swift */; };
 		4557ADCB27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4557ADCA27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift */; };
 		4557ADCF27EE971D00D070BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4557ADCE27EE971D00D070BA /* Assets.xcassets */; };
 		4557ADD227EE971D00D070BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4557ADD127EE971D00D070BA /* Preview Assets.xcassets */; };
-		45C7CBE228FA56D900B31B42 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C7CBE128FA56D800B31B42 /* APIClient.swift */; };
-		45C7CBE428FA58DE00B31B42 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C7CBE328FA58DE00B31B42 /* APIResponse.swift */; };
+		45C7CBE228FA56D900B31B42 /* UserAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C7CBE128FA56D800B31B42 /* UserAPIClient.swift */; };
+		45C7CBE428FA58DE00B31B42 /* UserAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C7CBE328FA58DE00B31B42 /* UserAPIResponse.swift */; };
 		45F3628928CB166E00C0F206 /* DataListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3628828CB166E00C0F206 /* DataListView.swift */; };
 		45F3628B28D55B9F00C0F206 /* DataListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3628A28D55B9F00C0F206 /* DataListViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4518F4D52916627D00AAC676 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4557ADBF27EE971C00D070BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4557ADC627EE971C00D070BA;
+			remoteInfo = "Swift-Concurrency-Training";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		4518F4CB2903BD2D00AAC676 /* APIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRepository.swift; sourceTree = "<group>"; };
+		4518F4CB2903BD2D00AAC676 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		4518F4D12916627D00AAC676 /* Swift-Concurrency-TrainingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-Concurrency-TrainingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4518F4DB29166B3100AAC676 /* UserAPIClientImplTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPIClientImplTest.swift; sourceTree = "<group>"; };
 		4557ADC727EE971C00D070BA /* Swift-Concurrency-Training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Concurrency-Training.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4557ADCA27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Concurrency_TrainingApp.swift; sourceTree = "<group>"; };
 		4557ADCE27EE971D00D070BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4557ADD127EE971D00D070BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		45C7CBE128FA56D800B31B42 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		45C7CBE328FA58DE00B31B42 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		45C7CBE128FA56D800B31B42 /* UserAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPIClient.swift; sourceTree = "<group>"; };
+		45C7CBE328FA58DE00B31B42 /* UserAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPIResponse.swift; sourceTree = "<group>"; };
 		45F3628828CB166E00C0F206 /* DataListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataListView.swift; sourceTree = "<group>"; };
 		45F3628A28D55B9F00C0F206 /* DataListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4518F4CE2916627D00AAC676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4557ADC427EE971C00D070BA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -40,10 +60,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4518F4D22916627D00AAC676 /* Swift-Concurrency-TrainingTests */ = {
+			isa = PBXGroup;
+			children = (
+				4518F4DA29166AD100AAC676 /* Model */,
+			);
+			path = "Swift-Concurrency-TrainingTests";
+			sourceTree = "<group>";
+		};
+		4518F4DA29166AD100AAC676 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4518F4DB29166B3100AAC676 /* UserAPIClientImplTest.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		4557ADBE27EE971C00D070BA = {
 			isa = PBXGroup;
 			children = (
 				4557ADC927EE971C00D070BA /* Swift-Concurrency-Training */,
+				4518F4D22916627D00AAC676 /* Swift-Concurrency-TrainingTests */,
 				4557ADC827EE971C00D070BA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				4557ADC727EE971C00D070BA /* Swift-Concurrency-Training.app */,
+				4518F4D12916627D00AAC676 /* Swift-Concurrency-TrainingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,9 +142,9 @@
 		45F3628528B9D27D00C0F206 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4518F4CB2903BD2D00AAC676 /* APIRepository.swift */,
-				45C7CBE128FA56D800B31B42 /* APIClient.swift */,
-				45C7CBE328FA58DE00B31B42 /* APIResponse.swift */,
+				4518F4CB2903BD2D00AAC676 /* UserRepository.swift */,
+				45C7CBE128FA56D800B31B42 /* UserAPIClient.swift */,
+				45C7CBE328FA58DE00B31B42 /* UserAPIResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -114,6 +152,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4518F4D02916627D00AAC676 /* Swift-Concurrency-TrainingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4518F4D72916627D00AAC676 /* Build configuration list for PBXNativeTarget "Swift-Concurrency-TrainingTests" */;
+			buildPhases = (
+				4518F4CD2916627D00AAC676 /* Sources */,
+				4518F4CE2916627D00AAC676 /* Frameworks */,
+				4518F4CF2916627D00AAC676 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4518F4D62916627D00AAC676 /* PBXTargetDependency */,
+			);
+			name = "Swift-Concurrency-TrainingTests";
+			productName = "Swift-Concurrency-TrainingTests";
+			productReference = 4518F4D12916627D00AAC676 /* Swift-Concurrency-TrainingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4557ADC627EE971C00D070BA /* Swift-Concurrency-Training */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4557ADD527EE971D00D070BA /* Build configuration list for PBXNativeTarget "Swift-Concurrency-Training" */;
@@ -140,9 +196,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1320;
+				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					4518F4D02916627D00AAC676 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 4557ADC627EE971C00D070BA;
+					};
 					4557ADC627EE971C00D070BA = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -164,11 +224,19 @@
 			projectRoot = "";
 			targets = (
 				4557ADC627EE971C00D070BA /* Swift-Concurrency-Training */,
+				4518F4D02916627D00AAC676 /* Swift-Concurrency-TrainingTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4518F4CF2916627D00AAC676 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4557ADC527EE971C00D070BA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,22 +249,76 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4518F4CD2916627D00AAC676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4518F4DC29166B3100AAC676 /* UserAPIClientImplTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4557ADC327EE971C00D070BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				45F3628928CB166E00C0F206 /* DataListView.swift in Sources */,
 				45F3628B28D55B9F00C0F206 /* DataListViewModel.swift in Sources */,
-				4518F4CC2903BD2D00AAC676 /* APIRepository.swift in Sources */,
+				4518F4CC2903BD2D00AAC676 /* UserRepository.swift in Sources */,
 				4557ADCB27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift in Sources */,
-				45C7CBE428FA58DE00B31B42 /* APIResponse.swift in Sources */,
-				45C7CBE228FA56D900B31B42 /* APIClient.swift in Sources */,
+				45C7CBE428FA58DE00B31B42 /* UserAPIResponse.swift in Sources */,
+				45C7CBE228FA56D900B31B42 /* UserAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4518F4D62916627D00AAC676 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4557ADC627EE971C00D070BA /* Swift-Concurrency-Training */;
+			targetProxy = 4518F4D52916627D00AAC676 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		4518F4D82916627D00AAC676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PC429995YF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kawahara.Swift-Concurrency-TrainingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift-Concurrency-Training.app/Swift-Concurrency-Training";
+			};
+			name = Debug;
+		};
+		4518F4D92916627D00AAC676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PC429995YF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kawahara.Swift-Concurrency-TrainingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift-Concurrency-Training.app/Swift-Concurrency-Training";
+			};
+			name = Release;
+		};
 		4557ADD327EE971D00D070BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -374,6 +496,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4518F4D72916627D00AAC676 /* Build configuration list for PBXNativeTarget "Swift-Concurrency-TrainingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4518F4D82916627D00AAC676 /* Debug */,
+				4518F4D92916627D00AAC676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4557ADC227EE971C00D070BA /* Build configuration list for PBXProject "Swift-Concurrency-Training" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

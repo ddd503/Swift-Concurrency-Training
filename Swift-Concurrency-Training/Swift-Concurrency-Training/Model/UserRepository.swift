@@ -11,10 +11,10 @@ protocol UserRepository {
     func users() async throws -> [User]
 }
 
-struct APIRepositoryImpl: UserRepository {
-    private let apiClient: APIClient
+struct UserRepositoryImpl: UserRepository {
+    private let apiClient: UserAPIClient
 
-    init(apiClient: APIClient) {
+    init(apiClient: UserAPIClient) {
         self.apiClient = apiClient
     }
 
