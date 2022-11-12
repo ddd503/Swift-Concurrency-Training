@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import Mockingjay
 
 class UserAPIClientImplTest: XCTestCase {
 
