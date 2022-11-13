@@ -19,6 +19,14 @@ struct UserRepositoryImpl: UserRepository {
     }
 
     func users() async throws -> [User] {
-        try! await apiClient.perform().users
+        let url = URL(string: "http://localhost:3000/v1/users")!
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = "GET"
+        do {
+            let users = try await apiClient.perform(request: urlRequest).users
+            return users
+        } catch {
+            throw error
+        }
     }
 }

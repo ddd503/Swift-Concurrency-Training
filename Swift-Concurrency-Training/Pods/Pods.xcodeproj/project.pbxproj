@@ -75,14 +75,14 @@
 		315F3633E84E8D3CB7957730718D4356 /* URITemplate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "URITemplate-umbrella.h"; sourceTree = "<group>"; };
 		37F0A5950C766684F9C391E81CB3D401 /* URITemplate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "URITemplate-dummy.m"; sourceTree = "<group>"; };
 		386A3B5560F429A2D417195528A781C7 /* Mockingjay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Mockingjay-dummy.m"; sourceTree = "<group>"; };
-		3D24851DF2A7139150ADCA3F485D00DC /* Mockingjay */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Mockingjay; path = Mockingjay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D24851DF2A7139150ADCA3F485D00DC /* Mockingjay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mockingjay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		421BE7808332368693AED630CD06CFD9 /* URITemplate-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "URITemplate-Info.plist"; sourceTree = "<group>"; };
 		4555937390A217C5225AAD8632FE5241 /* Mockingjay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Mockingjay.debug.xcconfig; sourceTree = "<group>"; };
 		460DECCB9D901F6EA9907F44F02D9849 /* URITemplate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = URITemplate.modulemap; sourceTree = "<group>"; };
 		550753345092CAA9626F98486564064D /* Pods-Swift-Concurrency-TrainingTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Swift-Concurrency-TrainingTests.modulemap"; sourceTree = "<group>"; };
 		59E4B428C8C921ACED0B147784258A61 /* Mockingjay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mockingjay.swift; path = Sources/Mockingjay/Mockingjay.swift; sourceTree = "<group>"; };
 		5EBC8F300895E39EA0DF6D6B2B5E6BCD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		6A92D13ACA76A198281BA4FC0F5CBAD0 /* URITemplate */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = URITemplate; path = URITemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A92D13ACA76A198281BA4FC0F5CBAD0 /* URITemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = URITemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C25A20DFE8210BCC204BC60865F3F43 /* Mockingjay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Mockingjay.modulemap; sourceTree = "<group>"; };
 		6DB7ACBF092F2F009EE8A5A64600296B /* URITemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = URITemplate.release.xcconfig; sourceTree = "<group>"; };
 		6F3687B8705F61C7B1D3E6DE78167AA1 /* Pods-Swift-Concurrency-TrainingTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Swift-Concurrency-TrainingTests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 		8B65D89773BB0CCA4B46C5A5146FD674 /* Pods-Swift-Concurrency-TrainingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swift-Concurrency-TrainingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8D7A6BD53D29B76EBC8500AA29DEE442 /* Pods-Swift-Concurrency-Training-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Swift-Concurrency-Training-dummy.m"; sourceTree = "<group>"; };
 		8EF9824E7F0080CAD521C2D5D4F379D2 /* Pods-Swift-Concurrency-TrainingTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Swift-Concurrency-TrainingTests-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E4F9E41C68210A89831BF60380E5E26 /* Mockingjay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Mockingjay-prefix.pch"; sourceTree = "<group>"; };
 		A746C780F3823003B2563E7428D356C5 /* Pods-Swift-Concurrency-Training.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swift-Concurrency-Training.release.xcconfig"; sourceTree = "<group>"; };
 		AA0F2370B572845ED278478764A79277 /* XCTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XCTest.swift; path = Sources/Mockingjay/XCTest.swift; sourceTree = "<group>"; };
@@ -152,10 +152,10 @@
 		07AEB59E436D2FCB23E3D50463DE4EA1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3D24851DF2A7139150ADCA3F485D00DC /* Mockingjay */,
+				3D24851DF2A7139150ADCA3F485D00DC /* Mockingjay.framework */,
 				F9179B7160A9851F4ECF3D17E3664EFB /* Pods-Swift-Concurrency-Training */,
 				F075827ED1938D4F4F207E7BC6F6D3E8 /* Pods-Swift-Concurrency-TrainingTests */,
-				6A92D13ACA76A198281BA4FC0F5CBAD0 /* URITemplate */,
+				6A92D13ACA76A198281BA4FC0F5CBAD0 /* URITemplate.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,7 +167,6 @@
 				695846410D4B6225121DAB5DB4730BDD /* Support Files */,
 				44A491FED3333A17717BCF32C4717DF0 /* XCTest */,
 			);
-			name = Mockingjay;
 			path = Mockingjay;
 			sourceTree = "<group>";
 		};
@@ -185,7 +184,6 @@
 				1AA00E1D241DE467B8B7B74B5DDCCD7E /* URITemplate.swift */,
 				569DEB2B4DD9CED084A15B744AE5D5AB /* Support Files */,
 			);
-			name = URITemplate;
 			path = URITemplate;
 			sourceTree = "<group>";
 		};
@@ -385,7 +383,7 @@
 			);
 			name = Mockingjay;
 			productName = Mockingjay;
-			productReference = 3D24851DF2A7139150ADCA3F485D00DC /* Mockingjay */;
+			productReference = 3D24851DF2A7139150ADCA3F485D00DC /* Mockingjay.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A4ED113D38492F631BC6DBF8BB3D1D8E /* URITemplate */ = {
@@ -403,7 +401,7 @@
 			);
 			name = URITemplate;
 			productName = URITemplate;
-			productReference = 6A92D13ACA76A198281BA4FC0F5CBAD0 /* URITemplate */;
+			productReference = 6A92D13ACA76A198281BA4FC0F5CBAD0 /* URITemplate.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		BC01B16317DA14E2BC19BE7A92E80A7C /* Pods-Swift-Concurrency-TrainingTests */ = {
@@ -434,7 +432,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1340;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -678,7 +676,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Mockingjay/Mockingjay-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Mockingjay/Mockingjay-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -788,7 +786,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Mockingjay/Mockingjay-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Mockingjay/Mockingjay-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -921,7 +919,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/URITemplate/URITemplate-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/URITemplate/URITemplate-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -955,7 +953,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/URITemplate/URITemplate-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/URITemplate/URITemplate-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
