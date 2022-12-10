@@ -8,11 +8,11 @@
 import Foundation
 
 protocol UserAPIClient {
-    func perform(request: URLRequest) async throws -> UserAPIResponse
+    func perform(request: URLRequest) async throws -> [User]
 }
 
 final class UserAPIClientImpl: UserAPIClient {
-    func perform(request: URLRequest) async throws -> UserAPIResponse {
+    func perform(request: URLRequest) async throws -> [User] {
         do {
             let result = try await URLSession.shared.data(for: request)
             guard let code = (result.1 as? HTTPURLResponse)?.statusCode else {
@@ -21,7 +21,7 @@ final class UserAPIClientImpl: UserAPIClient {
             guard (200..<300).contains(code) else {
                 throw NSError(domain: "out of statusCode range", code: code)
             }
-            let userAPIResponse = try JSONDecoder().decode(UserAPIResponse.self, from: result.0)
+            let userAPIResponse = try JSONDecoder().decode([User].self, from: result.0)
             return userAPIResponse
         } catch {
             throw error

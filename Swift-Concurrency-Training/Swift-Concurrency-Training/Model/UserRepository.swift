@@ -23,7 +23,7 @@ struct UserRepositoryImpl: UserRepository {
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = "GET"
         do {
-            let users = try await apiClient.perform(request: urlRequest).users
+            let users = try await apiClient.perform(request: urlRequest)
             return users
         } catch {
             throw error

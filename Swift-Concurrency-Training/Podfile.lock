@@ -1,25 +1,28 @@
 PODS:
-  - Mockingjay (2.0.1):
-    - Mockingjay/Core (= 2.0.1)
-    - Mockingjay/XCTest (= 2.0.1)
-  - Mockingjay/Core (2.0.1):
-    - URITemplate (~> 2.0)
-  - Mockingjay/XCTest (2.0.1):
-    - Mockingjay/Core
-  - URITemplate (2.0.3)
+  - OHHTTPStubs/Core (9.1.0)
+  - OHHTTPStubs/Default (9.1.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (9.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (9.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (9.1.0)
+  - OHHTTPStubs/Swift (9.1.0):
+    - OHHTTPStubs/Default
 
 DEPENDENCIES:
-  - Mockingjay
+  - OHHTTPStubs/Swift
 
 SPEC REPOS:
   trunk:
-    - Mockingjay
-    - URITemplate
+    - OHHTTPStubs
 
 SPEC CHECKSUMS:
-  Mockingjay: 11a621880d2887f1775bdcf824341eb68f218450
-  URITemplate: ace0c4c46dcf8afe6e89b4060621852886b15c3b
+  OHHTTPStubs: 90eac6d8f2c18317baeca36698523dc67c513831
 
-PODFILE CHECKSUM: d8130af1db6f58ed7eb579cb793db40255a02e3a
+PODFILE CHECKSUM: d53bf43031cee1e8b8c5951008c2d669d78d7dc2
 
 COCOAPODS: 1.11.3

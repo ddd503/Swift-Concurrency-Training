@@ -6,7 +6,7 @@
 //
 
 import XCTest
-import Mockingjay
+import OHHTTPStubs
 @testable import Swift_Concurrency_Training
 
 class UserAPIClientImplTest: XCTestCase {
@@ -14,14 +14,14 @@ class UserAPIClientImplTest: XCTestCase {
     // errorをスローするテストの場合はasync throwsをつければcatchしてくれる
     func test_perform_response_normal() async throws {
         let apiClient = UserAPIClientImpl()
-        let dummyReqest = URLRequest(url: URL(string: "http://localhost:3000/v1/users")!)
-        let reqestUrlString = "http://localhost:3000/v1/users"
+        let testRequest = URLRequest(url: URL(string: "http://localhost:3000/v1/users")!)
         let jsonFilePath = Bundle(for: type(of: self)).path(forResource: "dummy_users", ofType: "json")!
-        let responseData = try! Data(contentsOf: URL(fileURLWithPath: jsonFilePath), options: .mappedIfSafe)
-        stub(http(.get, uri: reqestUrlString), jsonData(responseData))
-        // エラースローした場合にどうなる？
-        let response = try await apiClient.perform(request: dummyReqest)
-        XCTAssertEqual(response.users.count, 2)
+        stub(condition: isPath("/v1/users")) { request in
+            HTTPStubsResponse(fileAtPath: jsonFilePath, statusCode: 200, headers: nil)
+        }
+        // エラースローした場合にどうなる？→ ケース自体が失敗する
+        let response = try await apiClient.perform(request: testRequest)
+        XCTAssertEqual(response.count, 3)
     }
 
 }

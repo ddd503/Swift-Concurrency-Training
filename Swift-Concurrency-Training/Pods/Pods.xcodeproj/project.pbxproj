@@ -7,53 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E0A75C2F3E004FD091E92803539250 /* Mockingjay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E4B428C8C921ACED0B147784258A61 /* Mockingjay.swift */; };
-		09A94FCA499B1DD9AF5A7AA5E4C5DFBE /* URITemplate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F0A5950C766684F9C391E81CB3D401 /* URITemplate-dummy.m */; };
-		16359F8D0C922D3FC1BE34C48CBA9B32 /* XCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0F2370B572845ED278478764A79277 /* XCTest.swift */; };
-		2369B4DD571509A92E8C316474AFCF34 /* MockingjayURLSessionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = D2918086C113BF13076B9A472675DD40 /* MockingjayURLSessionConfiguration.m */; };
-		2C37FBC9EED53CBC85A8BEF61F0FAB8A /* Matchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23821C7084035AC2778CE7098EE254E4 /* Matchers.swift */; };
-		3EC4E3AFE2DC41BE1466D137710E7DD0 /* URITemplate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 315F3633E84E8D3CB7957730718D4356 /* URITemplate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D140032010AB7B75D39B82D6CE63ACF /* Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7898D998ED94D2B06041B1150B2456 /* Builders.swift */; };
-		73925E8E5302441C4ACB88A741FEC501 /* Mockingjay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 386A3B5560F429A2D417195528A781C7 /* Mockingjay-dummy.m */; };
-		80131B99D2012C4D8F100C271C1E418C /* NSURLSessionConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82337892A857E5D989F315D75C500843 /* NSURLSessionConfiguration.swift */; };
-		83324B09F2BF212B212D9E2883E6FE00 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBC8F300895E39EA0DF6D6B2B5E6BCD /* XCTest.framework */; };
-		84916607DEE07231053F34DD4B80AA4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */; };
+		0194717FC38FFAE0D1B2C6029A093FB4 /* NSURLRequest+HTTPBodyTesting.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AC9AAE6418AF877A38D1FDCBC620BE5 /* NSURLRequest+HTTPBodyTesting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01D1BCE5AD80B0B843782627D32A9945 /* HTTPStubs.m in Sources */ = {isa = PBXBuildFile; fileRef = 47996ECC3F3C0091DF67E18683D77AEA /* HTTPStubs.m */; };
+		042668FFA122D78B6EE074C04C460261 /* OHHTTPStubsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736A8A782D7E9DD56B2D71B6B6BDE130 /* OHHTTPStubsSwift.swift */; };
+		07AF133A017AB74CC31B5475BFFA92E9 /* HTTPStubsResponse+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 72468E28AE8E4A1C954928A810C29633 /* HTTPStubsResponse+JSON.m */; };
+		09C4DA95304C05A60EC159203C0F4CF4 /* HTTPStubsResponse+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E8F87888190219C69EEDBF9BF1848ED /* HTTPStubsResponse+JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19FF16C15407ABBCAB0168CDE44709E1 /* NSURLRequest+HTTPBodyTesting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5108C23AC87C098477CFFBD4D806F5A5 /* NSURLRequest+HTTPBodyTesting.m */; };
+		2114F7E4B02770BF53B9B521D0DBC801 /* HTTPStubsMethodSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 7733FD4A1A3AB538B245BD517B663B28 /* HTTPStubsMethodSwizzling.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2A090B165CFA5629C9CE47E6318AB38E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
+		36217BC65CE6B7C4F2021C70F3D5F7C0 /* Pods-Swift-Concurrency-TrainingTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0408792DB55479121833BA94D1B0D8AA /* Pods-Swift-Concurrency-TrainingTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E2FF15EAFEF89119E9FD90C2B46D6E4 /* HTTPStubsMethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F6362623A9B6BCC1A2F0803BD53D1C /* HTTPStubsMethodSwizzling.m */; };
+		5F6E86DF36F8AC7D9B15396880AC2DA5 /* HTTPStubsPathHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 05795D80F7ADBF5F4A6F778B7729A2F6 /* HTTPStubsPathHelpers.m */; };
+		622D4F6AA5A0F7F2FE7522F6CD5FB210 /* Compatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = AC17B72B64B618B416CCA97514209F19 /* Compatibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A6135DF3532D742992A489E58E8D421 /* OHHTTPStubs-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD220818A23936E2AB3394735DD1D124 /* OHHTTPStubs-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90BBA22AE62C6D103CA45126D916E9B5 /* HTTPStubs+NSURLSessionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 444D43335D402FE711DD910A20491CFB /* HTTPStubs+NSURLSessionConfiguration.m */; };
 		9A9CDCB169037F55586A1287562C3105 /* Pods-Swift-Concurrency-Training-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7A6BD53D29B76EBC8500AA29DEE442 /* Pods-Swift-Concurrency-Training-dummy.m */; };
-		A50C9496F1B3F4CFAA18191605469FD1 /* Pods-Swift-Concurrency-TrainingTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3B2CDC01DC9415ADA23AE790A91835 /* Pods-Swift-Concurrency-TrainingTests-dummy.m */; };
-		AF6A598A2E23D651E27D4F4209424D01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */; };
-		B3190AD0FD14EAE155BA86FE1CDE51BE /* Mockingjay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C82169CCCC6BBCB00CA33B87A155E6C /* Mockingjay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BADEFD35391788F613680665A6910770 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */; };
-		BC18CC8DB6C873B1072E58DF9481CA7A /* Pods-Swift-Concurrency-TrainingTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0408792DB55479121833BA94D1B0D8AA /* Pods-Swift-Concurrency-TrainingTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE09B05827F66151D154800E41EE3FC6 /* Mockingjay.h in Headers */ = {isa = PBXBuildFile; fileRef = 11021F36058F604E442C5E8055F4F651 /* Mockingjay.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CAA55DE869DF5AC9C326E65A34FEF862 /* URITemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA00E1D241DE467B8B7B74B5DDCCD7E /* URITemplate.swift */; };
-		E06FC57B0A253021D9A514CFB30B159B /* MockingjayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED36AD5F4286DAB773A4AF3DBB26A1A /* MockingjayProtocol.swift */; };
-		EEAE155ACCAC7E70B4F1FADB88599F84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */; };
+		A30F65F16395BF5436088F7F327E8817 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3D57353834825F7B52B816066B7789 /* CFNetwork.framework */; };
+		A75F1D93C20CB25C19260ED16E0DC048 /* OHHTTPStubs-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B09F70D8318D3B3C6B25589AAE9933 /* OHHTTPStubs-dummy.m */; };
+		BA0EC4322F28B9DBC87874FF55BC9853 /* Pods-Swift-Concurrency-TrainingTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3B2CDC01DC9415ADA23AE790A91835 /* Pods-Swift-Concurrency-TrainingTests-dummy.m */; };
+		BADEFD35391788F613680665A6910770 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
+		BBD06A2859332AAF7C685D224F7E7A1A /* HTTPStubsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8752ED48BF48F46C57381CD46FB0C493 /* HTTPStubsResponse.m */; };
+		D1AA75E25744E797B4D68F6A4CB5D03D /* HTTPStubsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9104B13FA4CDFA3B9E98F37F21ED3F /* HTTPStubsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E551070A151DC06AF47B84CE7A258AEE /* HTTPStubs.h in Headers */ = {isa = PBXBuildFile; fileRef = 0389F5918103E445BC3DBC43C114AEFC /* HTTPStubs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F273E25CF3E2FAFA94DDFEB6D0F39348 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
+		FBA10EDD6E1E7704324E66F6B35540CD /* HTTPStubsPathHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 76ECE6049BBB7D8EC1A83DB3C317321F /* HTTPStubsPathHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE2DF97EE4E31A582FD79894CE4E7F37 /* Pods-Swift-Concurrency-Training-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1641DE551A815BF29CADBA438CF307A9 /* Pods-Swift-Concurrency-Training-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		33E0F93C8D94970E0FE3D6BD54D10078 /* PBXContainerItemProxy */ = {
+		E9532704563D7D9F4E7A40C1811AB9AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A4ED113D38492F631BC6DBF8BB3D1D8E;
-			remoteInfo = URITemplate;
+			remoteGlobalIDString = A983A2D06C5B6AA3D6ABA5CCC0A16725;
+			remoteInfo = OHHTTPStubs;
 		};
-		6E83F82B5DCE8CB585C95D40A476CA60 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7996D4D780FF8A38ECB1C58253B87C8F;
-			remoteInfo = Mockingjay;
-		};
-		C8788C976FB4B55598BE3C3373BBB26A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A4ED113D38492F631BC6DBF8BB3D1D8E;
-			remoteInfo = URITemplate;
-		};
-		DBD2037D0F918E06E6104574D45C5852 /* PBXContainerItemProxy */ = {
+		F887CAB07F11905B67523EEF173EB8C3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -63,56 +52,62 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0389F5918103E445BC3DBC43C114AEFC /* HTTPStubs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPStubs.h; path = Sources/OHHTTPStubs/include/HTTPStubs.h; sourceTree = "<group>"; };
 		03B7A77A76941D11E03BB1393C849802 /* Pods-Swift-Concurrency-Training-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Swift-Concurrency-Training-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0408792DB55479121833BA94D1B0D8AA /* Pods-Swift-Concurrency-TrainingTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Swift-Concurrency-TrainingTests-umbrella.h"; sourceTree = "<group>"; };
-		11021F36058F604E442C5E8055F4F651 /* Mockingjay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Mockingjay.h; path = Sources/Mockingjay/Mockingjay.h; sourceTree = "<group>"; };
-		15050BC510E832CCF8D7D600EAD99DAD /* URITemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = URITemplate.debug.xcconfig; sourceTree = "<group>"; };
+		05795D80F7ADBF5F4A6F778B7729A2F6 /* HTTPStubsPathHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPStubsPathHelpers.m; path = Sources/OHHTTPStubs/HTTPStubsPathHelpers.m; sourceTree = "<group>"; };
 		1641DE551A815BF29CADBA438CF307A9 /* Pods-Swift-Concurrency-Training-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Swift-Concurrency-Training-umbrella.h"; sourceTree = "<group>"; };
-		1AA00E1D241DE467B8B7B74B5DDCCD7E /* URITemplate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URITemplate.swift; path = Sources/URITemplate.swift; sourceTree = "<group>"; };
-		23821C7084035AC2778CE7098EE254E4 /* Matchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Matchers.swift; path = Sources/Mockingjay/Matchers.swift; sourceTree = "<group>"; };
+		17E33041B314FA837A3CAEB9DF3CDE9F /* OHHTTPStubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OHHTTPStubs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AC9AAE6418AF877A38D1FDCBC620BE5 /* NSURLRequest+HTTPBodyTesting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLRequest+HTTPBodyTesting.h"; path = "Sources/OHHTTPStubs/include/NSURLRequest+HTTPBodyTesting.h"; sourceTree = "<group>"; };
 		29503A38DEEF63DEF5805C2A431EDA0B /* Pods-Swift-Concurrency-TrainingTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Swift-Concurrency-TrainingTests-frameworks.sh"; sourceTree = "<group>"; };
-		2C82169CCCC6BBCB00CA33B87A155E6C /* Mockingjay-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Mockingjay-umbrella.h"; sourceTree = "<group>"; };
-		315F3633E84E8D3CB7957730718D4356 /* URITemplate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "URITemplate-umbrella.h"; sourceTree = "<group>"; };
-		37F0A5950C766684F9C391E81CB3D401 /* URITemplate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "URITemplate-dummy.m"; sourceTree = "<group>"; };
-		386A3B5560F429A2D417195528A781C7 /* Mockingjay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Mockingjay-dummy.m"; sourceTree = "<group>"; };
-		3D24851DF2A7139150ADCA3F485D00DC /* Mockingjay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mockingjay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		421BE7808332368693AED630CD06CFD9 /* URITemplate-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "URITemplate-Info.plist"; sourceTree = "<group>"; };
-		4555937390A217C5225AAD8632FE5241 /* Mockingjay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Mockingjay.debug.xcconfig; sourceTree = "<group>"; };
-		460DECCB9D901F6EA9907F44F02D9849 /* URITemplate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = URITemplate.modulemap; sourceTree = "<group>"; };
+		2B3D3237BDFD3BFD3B61513F838E21F6 /* OHHTTPStubs-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OHHTTPStubs-prefix.pch"; sourceTree = "<group>"; };
+		444D43335D402FE711DD910A20491CFB /* HTTPStubs+NSURLSessionConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "HTTPStubs+NSURLSessionConfiguration.m"; path = "Sources/OHHTTPStubs/HTTPStubs+NSURLSessionConfiguration.m"; sourceTree = "<group>"; };
+		47996ECC3F3C0091DF67E18683D77AEA /* HTTPStubs.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPStubs.m; path = Sources/OHHTTPStubs/HTTPStubs.m; sourceTree = "<group>"; };
+		5108C23AC87C098477CFFBD4D806F5A5 /* NSURLRequest+HTTPBodyTesting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLRequest+HTTPBodyTesting.m"; path = "Sources/OHHTTPStubs/NSURLRequest+HTTPBodyTesting.m"; sourceTree = "<group>"; };
 		550753345092CAA9626F98486564064D /* Pods-Swift-Concurrency-TrainingTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Swift-Concurrency-TrainingTests.modulemap"; sourceTree = "<group>"; };
-		59E4B428C8C921ACED0B147784258A61 /* Mockingjay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mockingjay.swift; path = Sources/Mockingjay/Mockingjay.swift; sourceTree = "<group>"; };
-		5EBC8F300895E39EA0DF6D6B2B5E6BCD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		6A92D13ACA76A198281BA4FC0F5CBAD0 /* URITemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = URITemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C25A20DFE8210BCC204BC60865F3F43 /* Mockingjay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Mockingjay.modulemap; sourceTree = "<group>"; };
-		6DB7ACBF092F2F009EE8A5A64600296B /* URITemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = URITemplate.release.xcconfig; sourceTree = "<group>"; };
+		5CEC6CB5CED75CC2FC24115BD0BDAD6B /* OHHTTPStubs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OHHTTPStubs.release.xcconfig; sourceTree = "<group>"; };
 		6F3687B8705F61C7B1D3E6DE78167AA1 /* Pods-Swift-Concurrency-TrainingTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Swift-Concurrency-TrainingTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		72468E28AE8E4A1C954928A810C29633 /* HTTPStubsResponse+JSON.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "HTTPStubsResponse+JSON.m"; path = "Sources/OHHTTPStubs/HTTPStubsResponse+JSON.m"; sourceTree = "<group>"; };
+		736A8A782D7E9DD56B2D71B6B6BDE130 /* OHHTTPStubsSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OHHTTPStubsSwift.swift; path = Sources/OHHTTPStubsSwift/OHHTTPStubsSwift.swift; sourceTree = "<group>"; };
+		76ECE6049BBB7D8EC1A83DB3C317321F /* HTTPStubsPathHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPStubsPathHelpers.h; path = Sources/OHHTTPStubs/include/HTTPStubsPathHelpers.h; sourceTree = "<group>"; };
+		7733FD4A1A3AB538B245BD517B663B28 /* HTTPStubsMethodSwizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPStubsMethodSwizzling.h; path = Sources/OHHTTPStubs/HTTPStubsMethodSwizzling.h; sourceTree = "<group>"; };
 		7EFF16ABA817309139E3C8C1241C9DB5 /* Pods-Swift-Concurrency-Training.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Swift-Concurrency-Training.modulemap"; sourceTree = "<group>"; };
-		82337892A857E5D989F315D75C500843 /* NSURLSessionConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSURLSessionConfiguration.swift; path = Sources/Mockingjay/NSURLSessionConfiguration.swift; sourceTree = "<group>"; };
+		8752ED48BF48F46C57381CD46FB0C493 /* HTTPStubsResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPStubsResponse.m; path = Sources/OHHTTPStubs/HTTPStubsResponse.m; sourceTree = "<group>"; };
 		8A023797D4A3BFDD23EDF3F9B39EDA5F /* Pods-Swift-Concurrency-Training-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Swift-Concurrency-Training-acknowledgements.plist"; sourceTree = "<group>"; };
 		8B65D89773BB0CCA4B46C5A5146FD674 /* Pods-Swift-Concurrency-TrainingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swift-Concurrency-TrainingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D3D57353834825F7B52B816066B7789 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		8D7A6BD53D29B76EBC8500AA29DEE442 /* Pods-Swift-Concurrency-Training-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Swift-Concurrency-Training-dummy.m"; sourceTree = "<group>"; };
+		8E8F87888190219C69EEDBF9BF1848ED /* HTTPStubsResponse+JSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "HTTPStubsResponse+JSON.h"; path = "Sources/OHHTTPStubs/include/HTTPStubsResponse+JSON.h"; sourceTree = "<group>"; };
+		8EC3488DA660920038760CC2C11CB1DA /* OHHTTPStubs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OHHTTPStubs.debug.xcconfig; sourceTree = "<group>"; };
 		8EF9824E7F0080CAD521C2D5D4F379D2 /* Pods-Swift-Concurrency-TrainingTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Swift-Concurrency-TrainingTests-Info.plist"; sourceTree = "<group>"; };
+		90F6362623A9B6BCC1A2F0803BD53D1C /* HTTPStubsMethodSwizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPStubsMethodSwizzling.m; path = Sources/OHHTTPStubs/HTTPStubsMethodSwizzling.m; sourceTree = "<group>"; };
+		96B09F70D8318D3B3C6B25589AAE9933 /* OHHTTPStubs-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OHHTTPStubs-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E4F9E41C68210A89831BF60380E5E26 /* Mockingjay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Mockingjay-prefix.pch"; sourceTree = "<group>"; };
 		A746C780F3823003B2563E7428D356C5 /* Pods-Swift-Concurrency-Training.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swift-Concurrency-Training.release.xcconfig"; sourceTree = "<group>"; };
-		AA0F2370B572845ED278478764A79277 /* XCTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XCTest.swift; path = Sources/Mockingjay/XCTest.swift; sourceTree = "<group>"; };
+		AC17B72B64B618B416CCA97514209F19 /* Compatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Compatibility.h; path = Sources/OHHTTPStubs/include/Compatibility.h; sourceTree = "<group>"; };
 		B317B4BE4F218E7A4230C7A011554160 /* Pods-Swift-Concurrency-Training-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Swift-Concurrency-Training-Info.plist"; sourceTree = "<group>"; };
 		BCD262C0C769F4D95EEC6133570CB92E /* Pods-Swift-Concurrency-TrainingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swift-Concurrency-TrainingTests.release.xcconfig"; sourceTree = "<group>"; };
-		BF7898D998ED94D2B06041B1150B2456 /* Builders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Builders.swift; path = Sources/Mockingjay/Builders.swift; sourceTree = "<group>"; };
-		CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D2918086C113BF13076B9A472675DD40 /* MockingjayURLSessionConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MockingjayURLSessionConfiguration.m; path = Sources/Mockingjay/MockingjayURLSessionConfiguration.m; sourceTree = "<group>"; };
-		D4379AAB366BC12CCBBE0BB27BB331C5 /* Mockingjay-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Mockingjay-Info.plist"; sourceTree = "<group>"; };
+		BF3F66B3E0CF91C536869F9EBF7D7D82 /* OHHTTPStubs.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OHHTTPStubs.modulemap; sourceTree = "<group>"; };
+		CD220818A23936E2AB3394735DD1D124 /* OHHTTPStubs-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OHHTTPStubs-umbrella.h"; sourceTree = "<group>"; };
 		D445C036C8D07410A43F896473742573 /* Pods-Swift-Concurrency-TrainingTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Swift-Concurrency-TrainingTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DED36AD5F4286DAB773A4AF3DBB26A1A /* MockingjayProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MockingjayProtocol.swift; path = Sources/Mockingjay/MockingjayProtocol.swift; sourceTree = "<group>"; };
+		D8271BE9485D327CBECA394306611B48 /* OHHTTPStubs-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OHHTTPStubs-Info.plist"; sourceTree = "<group>"; };
 		ED3B2CDC01DC9415ADA23AE790A91835 /* Pods-Swift-Concurrency-TrainingTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Swift-Concurrency-TrainingTests-dummy.m"; sourceTree = "<group>"; };
 		F075827ED1938D4F4F207E7BC6F6D3E8 /* Pods-Swift-Concurrency-TrainingTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Swift-Concurrency-TrainingTests"; path = Pods_Swift_Concurrency_TrainingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3A9C0CC2C9D095ADB0FC972613E0617 /* Mockingjay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Mockingjay.release.xcconfig; sourceTree = "<group>"; };
 		F9179B7160A9851F4ECF3D17E3664EFB /* Pods-Swift-Concurrency-Training */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Swift-Concurrency-Training"; path = Pods_Swift_Concurrency_Training.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA9104B13FA4CDFA3B9E98F37F21ED3F /* HTTPStubsResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPStubsResponse.h; path = Sources/OHHTTPStubs/include/HTTPStubsResponse.h; sourceTree = "<group>"; };
 		FCB0084B699EBE814A6C11A18886FC1D /* Pods-Swift-Concurrency-Training.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swift-Concurrency-Training.debug.xcconfig"; sourceTree = "<group>"; };
-		FF729DF9EC716020720D4C8A936B0DA0 /* URITemplate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "URITemplate-prefix.pch"; sourceTree = "<group>"; };
+		FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		151EE92F243E420B4DC2B01A000C976F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F273E25CF3E2FAFA94DDFEB6D0F39348 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4C57749B0AB31B231867E964536E7EA2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -121,117 +116,68 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5ABBD4497F159FF95AAA807980FD4AF8 /* Frameworks */ = {
+		E6C4221503E63AB94BBB9CE997C151A0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEAE155ACCAC7E70B4F1FADB88599F84 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		64FCE2BA6C00903676429ACA3A524C4F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				84916607DEE07231053F34DD4B80AA4E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CD3F6085AA737DEB37409BD76647EAD1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AF6A598A2E23D651E27D4F4209424D01 /* Foundation.framework in Frameworks */,
-				83324B09F2BF212B212D9E2883E6FE00 /* XCTest.framework in Frameworks */,
+				A30F65F16395BF5436088F7F327E8817 /* CFNetwork.framework in Frameworks */,
+				2A090B165CFA5629C9CE47E6318AB38E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07AEB59E436D2FCB23E3D50463DE4EA1 /* Products */ = {
+		0389F2F489917D675F66FA48F47E9C27 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
-				3D24851DF2A7139150ADCA3F485D00DC /* Mockingjay.framework */,
-				F9179B7160A9851F4ECF3D17E3664EFB /* Pods-Swift-Concurrency-Training */,
-				F075827ED1938D4F4F207E7BC6F6D3E8 /* Pods-Swift-Concurrency-TrainingTests */,
-				6A92D13ACA76A198281BA4FC0F5CBAD0 /* URITemplate.framework */,
+				736A8A782D7E9DD56B2D71B6B6BDE130 /* OHHTTPStubsSwift.swift */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		14758E6EC8FC4F89A3F34C580639CCD9 /* Mockingjay */ = {
-			isa = PBXGroup;
-			children = (
-				A9A118E385AF2E1CE4A686D0A98DCB98 /* Core */,
-				695846410D4B6225121DAB5DB4730BDD /* Support Files */,
-				44A491FED3333A17717BCF32C4717DF0 /* XCTest */,
-			);
-			path = Mockingjay;
+			name = Swift;
 			sourceTree = "<group>";
 		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				974814B39C0012DECD183BBB91B32103 /* iOS */,
+				61C8CC330A5CA84DA2F5F1D32AB07069 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		22177E62EF4E203128F505DBE6AE0C70 /* URITemplate */ = {
+		1BA3C1823846A764684949B6A5C8B401 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1AA00E1D241DE467B8B7B74B5DDCCD7E /* URITemplate.swift */,
-				569DEB2B4DD9CED084A15B744AE5D5AB /* Support Files */,
-			);
-			path = URITemplate;
-			sourceTree = "<group>";
-		};
-		378C95EC7B407E9A3596FC18DD441AFB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				14758E6EC8FC4F89A3F34C580639CCD9 /* Mockingjay */,
-				22177E62EF4E203128F505DBE6AE0C70 /* URITemplate */,
+				A8803767495ABAA1B17D8138DCD31DA3 /* OHHTTPStubs */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		44A491FED3333A17717BCF32C4717DF0 /* XCTest */ = {
+		4B499268ECB7E45DF1DFD04F6B9AC71B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA0F2370B572845ED278478764A79277 /* XCTest.swift */,
+				17E33041B314FA837A3CAEB9DF3CDE9F /* OHHTTPStubs.framework */,
+				F9179B7160A9851F4ECF3D17E3664EFB /* Pods-Swift-Concurrency-Training */,
+				F075827ED1938D4F4F207E7BC6F6D3E8 /* Pods-Swift-Concurrency-TrainingTests */,
 			);
-			name = XCTest;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		569DEB2B4DD9CED084A15B744AE5D5AB /* Support Files */ = {
+		61C8CC330A5CA84DA2F5F1D32AB07069 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				460DECCB9D901F6EA9907F44F02D9849 /* URITemplate.modulemap */,
-				37F0A5950C766684F9C391E81CB3D401 /* URITemplate-dummy.m */,
-				421BE7808332368693AED630CD06CFD9 /* URITemplate-Info.plist */,
-				FF729DF9EC716020720D4C8A936B0DA0 /* URITemplate-prefix.pch */,
-				315F3633E84E8D3CB7957730718D4356 /* URITemplate-umbrella.h */,
-				15050BC510E832CCF8D7D600EAD99DAD /* URITemplate.debug.xcconfig */,
-				6DB7ACBF092F2F009EE8A5A64600296B /* URITemplate.release.xcconfig */,
+				8D3D57353834825F7B52B816066B7789 /* CFNetwork.framework */,
+				FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/URITemplate";
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		695846410D4B6225121DAB5DB4730BDD /* Support Files */ = {
+		7A7FD685BEE56B63E1F6F240D4B0D09A /* OHPathHelpers */ = {
 			isa = PBXGroup;
 			children = (
-				6C25A20DFE8210BCC204BC60865F3F43 /* Mockingjay.modulemap */,
-				386A3B5560F429A2D417195528A781C7 /* Mockingjay-dummy.m */,
-				D4379AAB366BC12CCBBE0BB27BB331C5 /* Mockingjay-Info.plist */,
-				9E4F9E41C68210A89831BF60380E5E26 /* Mockingjay-prefix.pch */,
-				2C82169CCCC6BBCB00CA33B87A155E6C /* Mockingjay-umbrella.h */,
-				4555937390A217C5225AAD8632FE5241 /* Mockingjay.debug.xcconfig */,
-				F3A9C0CC2C9D095ADB0FC972613E0617 /* Mockingjay.release.xcconfig */,
+				76ECE6049BBB7D8EC1A83DB3C317321F /* HTTPStubsPathHelpers.h */,
+				05795D80F7ADBF5F4A6F778B7729A2F6 /* HTTPStubsPathHelpers.m */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Mockingjay";
+			name = OHPathHelpers;
 			sourceTree = "<group>";
 		};
 		8183AF89919892E583C64D469619E5E6 /* Targets Support Files */ = {
@@ -243,27 +189,50 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		974814B39C0012DECD183BBB91B32103 /* iOS */ = {
+		91C13F8F2D709FB6B869F3065B6AB447 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */,
-				5EBC8F300895E39EA0DF6D6B2B5E6BCD /* XCTest.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		A9A118E385AF2E1CE4A686D0A98DCB98 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				BF7898D998ED94D2B06041B1150B2456 /* Builders.swift */,
-				23821C7084035AC2778CE7098EE254E4 /* Matchers.swift */,
-				11021F36058F604E442C5E8055F4F651 /* Mockingjay.h */,
-				59E4B428C8C921ACED0B147784258A61 /* Mockingjay.swift */,
-				DED36AD5F4286DAB773A4AF3DBB26A1A /* MockingjayProtocol.swift */,
-				D2918086C113BF13076B9A472675DD40 /* MockingjayURLSessionConfiguration.m */,
-				82337892A857E5D989F315D75C500843 /* NSURLSessionConfiguration.swift */,
+				AC17B72B64B618B416CCA97514209F19 /* Compatibility.h */,
+				0389F5918103E445BC3DBC43C114AEFC /* HTTPStubs.h */,
+				47996ECC3F3C0091DF67E18683D77AEA /* HTTPStubs.m */,
+				FA9104B13FA4CDFA3B9E98F37F21ED3F /* HTTPStubsResponse.h */,
+				8752ED48BF48F46C57381CD46FB0C493 /* HTTPStubsResponse.m */,
 			);
 			name = Core;
+			sourceTree = "<group>";
+		};
+		A8803767495ABAA1B17D8138DCD31DA3 /* OHHTTPStubs */ = {
+			isa = PBXGroup;
+			children = (
+				91C13F8F2D709FB6B869F3065B6AB447 /* Core */,
+				BC1AA576E42B2328348DAE8C5C5BF67A /* JSON */,
+				AC27C31569BBF764D122BD802DFC3A3D /* NSURLSession */,
+				7A7FD685BEE56B63E1F6F240D4B0D09A /* OHPathHelpers */,
+				EF81891485D5AFBA5E33C1B67A5433FD /* Support Files */,
+				0389F2F489917D675F66FA48F47E9C27 /* Swift */,
+			);
+			path = OHHTTPStubs;
+			sourceTree = "<group>";
+		};
+		AC27C31569BBF764D122BD802DFC3A3D /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				444D43335D402FE711DD910A20491CFB /* HTTPStubs+NSURLSessionConfiguration.m */,
+				7733FD4A1A3AB538B245BD517B663B28 /* HTTPStubsMethodSwizzling.h */,
+				90F6362623A9B6BCC1A2F0803BD53D1C /* HTTPStubsMethodSwizzling.m */,
+				1AC9AAE6418AF877A38D1FDCBC620BE5 /* NSURLRequest+HTTPBodyTesting.h */,
+				5108C23AC87C098477CFFBD4D806F5A5 /* NSURLRequest+HTTPBodyTesting.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		BC1AA576E42B2328348DAE8C5C5BF67A /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				8E8F87888190219C69EEDBF9BF1848ED /* HTTPStubsResponse+JSON.h */,
+				72468E28AE8E4A1C954928A810C29633 /* HTTPStubsResponse+JSON.m */,
+			);
+			name = JSON;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -271,8 +240,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				378C95EC7B407E9A3596FC18DD441AFB /* Pods */,
-				07AEB59E436D2FCB23E3D50463DE4EA1 /* Products */,
+				1BA3C1823846A764684949B6A5C8B401 /* Pods */,
+				4B499268ECB7E45DF1DFD04F6B9AC71B /* Products */,
 				8183AF89919892E583C64D469619E5E6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -291,6 +260,21 @@
 			);
 			name = "Pods-Swift-Concurrency-Training";
 			path = "Target Support Files/Pods-Swift-Concurrency-Training";
+			sourceTree = "<group>";
+		};
+		EF81891485D5AFBA5E33C1B67A5433FD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF3F66B3E0CF91C536869F9EBF7D7D82 /* OHHTTPStubs.modulemap */,
+				96B09F70D8318D3B3C6B25589AAE9933 /* OHHTTPStubs-dummy.m */,
+				D8271BE9485D327CBECA394306611B48 /* OHHTTPStubs-Info.plist */,
+				2B3D3237BDFD3BFD3B61513F838E21F6 /* OHHTTPStubs-prefix.pch */,
+				CD220818A23936E2AB3394735DD1D124 /* OHHTTPStubs-umbrella.h */,
+				8EC3488DA660920038760CC2C11CB1DA /* OHHTTPStubs.debug.xcconfig */,
+				5CEC6CB5CED75CC2FC24115BD0BDAD6B /* OHHTTPStubs.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OHHTTPStubs";
 			sourceTree = "<group>";
 		};
 		FABDED8C57D41E2825E7BBA8A5F05DD3 /* Pods-Swift-Concurrency-TrainingTests */ = {
@@ -313,11 +297,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		36775E9EBA13C9DB3253B9899E3F351F /* Headers */ = {
+		1AEB8D10FF294C792385D4003CE534B7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EC4E3AFE2DC41BE1466D137710E7DD0 /* URITemplate-umbrella.h in Headers */,
+				36217BC65CE6B7C4F2021C70F3D5F7C0 /* Pods-Swift-Concurrency-TrainingTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,20 +313,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B8DCB2F1C4F6039E9621602E70299EBC /* Headers */ = {
+		79BF8FF3D602332DB9720C936508808B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC18CC8DB6C873B1072E58DF9481CA7A /* Pods-Swift-Concurrency-TrainingTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E3FA355FC870E78E397446EAD676A99D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BE09B05827F66151D154800E41EE3FC6 /* Mockingjay.h in Headers */,
-				B3190AD0FD14EAE155BA86FE1CDE51BE /* Mockingjay-umbrella.h in Headers */,
+				622D4F6AA5A0F7F2FE7522F6CD5FB210 /* Compatibility.h in Headers */,
+				E551070A151DC06AF47B84CE7A258AEE /* HTTPStubs.h in Headers */,
+				2114F7E4B02770BF53B9B521D0DBC801 /* HTTPStubsMethodSwizzling.h in Headers */,
+				FBA10EDD6E1E7704324E66F6B35540CD /* HTTPStubsPathHelpers.h in Headers */,
+				D1AA75E25744E797B4D68F6A4CB5D03D /* HTTPStubsResponse.h in Headers */,
+				09C4DA95304C05A60EC159203C0F4CF4 /* HTTPStubsResponse+JSON.h in Headers */,
+				0194717FC38FFAE0D1B2C6029A093FB4 /* NSURLRequest+HTTPBodyTesting.h in Headers */,
+				8A6135DF3532D742992A489E58E8D421 /* OHHTTPStubs-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,58 +349,38 @@
 			productReference = F9179B7160A9851F4ECF3D17E3664EFB /* Pods-Swift-Concurrency-Training */;
 			productType = "com.apple.product-type.framework";
 		};
-		7996D4D780FF8A38ECB1C58253B87C8F /* Mockingjay */ = {
+		A983A2D06C5B6AA3D6ABA5CCC0A16725 /* OHHTTPStubs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E455E1793A1987C14F63188D2CE58D66 /* Build configuration list for PBXNativeTarget "Mockingjay" */;
+			buildConfigurationList = 16B9D186E741234F74F4E0D0D64CEFA1 /* Build configuration list for PBXNativeTarget "OHHTTPStubs" */;
 			buildPhases = (
-				E3FA355FC870E78E397446EAD676A99D /* Headers */,
-				7B07FE21CFFDC507D2BA42379F6CC90A /* Sources */,
-				CD3F6085AA737DEB37409BD76647EAD1 /* Frameworks */,
-				26BF62DF0EC031F1A95BC6F5066B2173 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F1ECF1521254DB753EE0F5DE46555D25 /* PBXTargetDependency */,
-			);
-			name = Mockingjay;
-			productName = Mockingjay;
-			productReference = 3D24851DF2A7139150ADCA3F485D00DC /* Mockingjay.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A4ED113D38492F631BC6DBF8BB3D1D8E /* URITemplate */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1B2274E558046288E46F991FB38EE0DB /* Build configuration list for PBXNativeTarget "URITemplate" */;
-			buildPhases = (
-				36775E9EBA13C9DB3253B9899E3F351F /* Headers */,
-				C3FA3B34D21A5ED757D90AEE80BE304D /* Sources */,
-				5ABBD4497F159FF95AAA807980FD4AF8 /* Frameworks */,
-				44E56E5FBF179AE6121EAB69FB5588B4 /* Resources */,
+				79BF8FF3D602332DB9720C936508808B /* Headers */,
+				727460F596859EC2E21DA321013FB809 /* Sources */,
+				E6C4221503E63AB94BBB9CE997C151A0 /* Frameworks */,
+				B70AFB673CBE339AF6A31EAD000F76A6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = URITemplate;
-			productName = URITemplate;
-			productReference = 6A92D13ACA76A198281BA4FC0F5CBAD0 /* URITemplate.framework */;
+			name = OHHTTPStubs;
+			productName = OHHTTPStubs;
+			productReference = 17E33041B314FA837A3CAEB9DF3CDE9F /* OHHTTPStubs.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		BC01B16317DA14E2BC19BE7A92E80A7C /* Pods-Swift-Concurrency-TrainingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9DFAC8051BCA6CAA34A4B64456A383EE /* Build configuration list for PBXNativeTarget "Pods-Swift-Concurrency-TrainingTests" */;
+			buildConfigurationList = DBFBDD6066936FE3BA64978DFA413E2C /* Build configuration list for PBXNativeTarget "Pods-Swift-Concurrency-TrainingTests" */;
 			buildPhases = (
-				B8DCB2F1C4F6039E9621602E70299EBC /* Headers */,
-				8F76F60915C69804CA116B85CE1A074C /* Sources */,
-				64FCE2BA6C00903676429ACA3A524C4F /* Frameworks */,
-				FFF200EFC009441F1FD8DE0F0FEE8410 /* Resources */,
+				1AEB8D10FF294C792385D4003CE534B7 /* Headers */,
+				1C2AD45BC0EC4430E17CF89008AD5517 /* Sources */,
+				151EE92F243E420B4DC2B01A000C976F /* Frameworks */,
+				74C63D184907C1FEA114E513D4355E21 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8DE4B553D5050B1A6BBE6266FA16C54A /* PBXTargetDependency */,
-				A697744777A2252609CE1CB6B9F65B5C /* PBXTargetDependency */,
-				B466CF170A634A43BBF31F701C5906B6 /* PBXTargetDependency */,
+				7C85C7A2930FBE0DD6A6F987505D5BDF /* PBXTargetDependency */,
+				B757D2C19EED86371D29A9C8FF485023 /* PBXTargetDependency */,
 			);
 			name = "Pods-Swift-Concurrency-TrainingTests";
 			productName = Pods_Swift_Concurrency_TrainingTests;
@@ -443,27 +405,26 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 07AEB59E436D2FCB23E3D50463DE4EA1 /* Products */;
+			productRefGroup = 4B499268ECB7E45DF1DFD04F6B9AC71B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7996D4D780FF8A38ECB1C58253B87C8F /* Mockingjay */,
+				A983A2D06C5B6AA3D6ABA5CCC0A16725 /* OHHTTPStubs */,
 				12516A79FF34E846FB0F346351BD4557 /* Pods-Swift-Concurrency-Training */,
 				BC01B16317DA14E2BC19BE7A92E80A7C /* Pods-Swift-Concurrency-TrainingTests */,
-				A4ED113D38492F631BC6DBF8BB3D1D8E /* URITemplate */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		26BF62DF0EC031F1A95BC6F5066B2173 /* Resources */ = {
+		74C63D184907C1FEA114E513D4355E21 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44E56E5FBF179AE6121EAB69FB5588B4 /* Resources */ = {
+		B70AFB673CBE339AF6A31EAD000F76A6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -477,45 +438,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FFF200EFC009441F1FD8DE0F0FEE8410 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7B07FE21CFFDC507D2BA42379F6CC90A /* Sources */ = {
+		1C2AD45BC0EC4430E17CF89008AD5517 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D140032010AB7B75D39B82D6CE63ACF /* Builders.swift in Sources */,
-				2C37FBC9EED53CBC85A8BEF61F0FAB8A /* Matchers.swift in Sources */,
-				00E0A75C2F3E004FD091E92803539250 /* Mockingjay.swift in Sources */,
-				73925E8E5302441C4ACB88A741FEC501 /* Mockingjay-dummy.m in Sources */,
-				E06FC57B0A253021D9A514CFB30B159B /* MockingjayProtocol.swift in Sources */,
-				2369B4DD571509A92E8C316474AFCF34 /* MockingjayURLSessionConfiguration.m in Sources */,
-				80131B99D2012C4D8F100C271C1E418C /* NSURLSessionConfiguration.swift in Sources */,
-				16359F8D0C922D3FC1BE34C48CBA9B32 /* XCTest.swift in Sources */,
+				BA0EC4322F28B9DBC87874FF55BC9853 /* Pods-Swift-Concurrency-TrainingTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F76F60915C69804CA116B85CE1A074C /* Sources */ = {
+		727460F596859EC2E21DA321013FB809 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A50C9496F1B3F4CFAA18191605469FD1 /* Pods-Swift-Concurrency-TrainingTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C3FA3B34D21A5ED757D90AEE80BE304D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CAA55DE869DF5AC9C326E65A34FEF862 /* URITemplate.swift in Sources */,
-				09A94FCA499B1DD9AF5A7AA5E4C5DFBE /* URITemplate-dummy.m in Sources */,
+				01D1BCE5AD80B0B843782627D32A9945 /* HTTPStubs.m in Sources */,
+				90BBA22AE62C6D103CA45126D916E9B5 /* HTTPStubs+NSURLSessionConfiguration.m in Sources */,
+				5E2FF15EAFEF89119E9FD90C2B46D6E4 /* HTTPStubsMethodSwizzling.m in Sources */,
+				5F6E86DF36F8AC7D9B15396880AC2DA5 /* HTTPStubsPathHelpers.m in Sources */,
+				BBD06A2859332AAF7C685D224F7E7A1A /* HTTPStubsResponse.m in Sources */,
+				07AF133A017AB74CC31B5475BFFA92E9 /* HTTPStubsResponse+JSON.m in Sources */,
+				19FF16C15407ABBCAB0168CDE44709E1 /* NSURLRequest+HTTPBodyTesting.m in Sources */,
+				A75F1D93C20CB25C19260ED16E0DC048 /* OHHTTPStubs-dummy.m in Sources */,
+				042668FFA122D78B6EE074C04C460261 /* OHHTTPStubsSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,33 +476,56 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8DE4B553D5050B1A6BBE6266FA16C54A /* PBXTargetDependency */ = {
+		7C85C7A2930FBE0DD6A6F987505D5BDF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Mockingjay;
-			target = 7996D4D780FF8A38ECB1C58253B87C8F /* Mockingjay */;
-			targetProxy = 6E83F82B5DCE8CB585C95D40A476CA60 /* PBXContainerItemProxy */;
+			name = OHHTTPStubs;
+			target = A983A2D06C5B6AA3D6ABA5CCC0A16725 /* OHHTTPStubs */;
+			targetProxy = E9532704563D7D9F4E7A40C1811AB9AB /* PBXContainerItemProxy */;
 		};
-		A697744777A2252609CE1CB6B9F65B5C /* PBXTargetDependency */ = {
+		B757D2C19EED86371D29A9C8FF485023 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Swift-Concurrency-Training";
 			target = 12516A79FF34E846FB0F346351BD4557 /* Pods-Swift-Concurrency-Training */;
-			targetProxy = DBD2037D0F918E06E6104574D45C5852 /* PBXContainerItemProxy */;
-		};
-		B466CF170A634A43BBF31F701C5906B6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = URITemplate;
-			target = A4ED113D38492F631BC6DBF8BB3D1D8E /* URITemplate */;
-			targetProxy = C8788C976FB4B55598BE3C3373BBB26A /* PBXContainerItemProxy */;
-		};
-		F1ECF1521254DB753EE0F5DE46555D25 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = URITemplate;
-			target = A4ED113D38492F631BC6DBF8BB3D1D8E /* URITemplate */;
-			targetProxy = 33E0F93C8D94970E0FE3D6BD54D10078 /* PBXContainerItemProxy */;
+			targetProxy = F887CAB07F11905B67523EEF173EB8C3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		12F256A07FBF287812C34D062F1DF54F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CEC6CB5CED75CC2FC24115BD0BDAD6B /* OHHTTPStubs.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OHHTTPStubs/OHHTTPStubs-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OHHTTPStubs/OHHTTPStubs-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/OHHTTPStubs/OHHTTPStubs.modulemap";
+				PRODUCT_MODULE_NAME = OHHTTPStubs;
+				PRODUCT_NAME = OHHTTPStubs;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		4214E6946993DF02ED98D89047C64016 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -661,42 +630,7 @@
 			};
 			name = Release;
 		};
-		73DEA8E7DF785154A9ABFA21C20BC076 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3A9C0CC2C9D095ADB0FC972613E0617 /* Mockingjay.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Mockingjay/Mockingjay-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Mockingjay/Mockingjay-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Mockingjay/Mockingjay.modulemap";
-				PRODUCT_MODULE_NAME = Mockingjay;
-				PRODUCT_NAME = Mockingjay;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		76C2FDE5143F673BD43D37AF036578CA /* Release */ = {
+		8250D405200A50892153BE1C63748951 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BCD262C0C769F4D95EEC6133570CB92E /* Pods-Swift-Concurrency-TrainingTests.release.xcconfig */;
 			buildSettings = {
@@ -734,77 +668,6 @@
 			};
 			name = Release;
 		};
-		7F656606E9DFE5DB294B36F319A68F79 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B65D89773BB0CCA4B46C5A5146FD674 /* Pods-Swift-Concurrency-TrainingTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Swift-Concurrency-TrainingTests/Pods-Swift-Concurrency-TrainingTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Swift-Concurrency-TrainingTests/Pods-Swift-Concurrency-TrainingTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		85D51C6B28AC3A28D449A247DC8BA62C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4555937390A217C5225AAD8632FE5241 /* Mockingjay.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Mockingjay/Mockingjay-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Mockingjay/Mockingjay-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Mockingjay/Mockingjay.modulemap";
-				PRODUCT_MODULE_NAME = Mockingjay;
-				PRODUCT_NAME = Mockingjay;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		88ED89C9F853B25DCB8A4B10B1B3724E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FCB0084B699EBE814A6C11A18886FC1D /* Pods-Swift-Concurrency-Training.debug.xcconfig */;
@@ -829,6 +692,43 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Swift-Concurrency-Training/Pods-Swift-Concurrency-Training.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9658B8EFE073D1B930C881D4E8C1B0B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B65D89773BB0CCA4B46C5A5146FD674 /* Pods-Swift-Concurrency-TrainingTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Swift-Concurrency-TrainingTests/Pods-Swift-Concurrency-TrainingTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Swift-Concurrency-TrainingTests/Pods-Swift-Concurrency-TrainingTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -904,9 +804,9 @@
 			};
 			name = Release;
 		};
-		D066D234FA7113C54494FD655F43E293 /* Debug */ = {
+		DA29B8401A6CFCBE868FDC27B258A822 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 15050BC510E832CCF8D7D600EAD99DAD /* URITemplate.debug.xcconfig */;
+			baseConfigurationReference = 8EC3488DA660920038760CC2C11CB1DA /* OHHTTPStubs.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -916,8 +816,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/URITemplate/URITemplate-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/URITemplate/URITemplate-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/OHHTTPStubs/OHHTTPStubs-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OHHTTPStubs/OHHTTPStubs-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -925,62 +825,27 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/URITemplate/URITemplate.modulemap";
-				PRODUCT_MODULE_NAME = URITemplate;
-				PRODUCT_NAME = URITemplate;
+				MODULEMAP_FILE = "Target Support Files/OHHTTPStubs/OHHTTPStubs.modulemap";
+				PRODUCT_MODULE_NAME = OHHTTPStubs;
+				PRODUCT_NAME = OHHTTPStubs;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 5.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		E3FFA028F6A8BDA7992377292755967E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6DB7ACBF092F2F009EE8A5A64600296B /* URITemplate.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/URITemplate/URITemplate-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/URITemplate/URITemplate-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/URITemplate/URITemplate.modulemap";
-				PRODUCT_MODULE_NAME = URITemplate;
-				PRODUCT_NAME = URITemplate;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1B2274E558046288E46F991FB38EE0DB /* Build configuration list for PBXNativeTarget "URITemplate" */ = {
+		16B9D186E741234F74F4E0D0D64CEFA1 /* Build configuration list for PBXNativeTarget "OHHTTPStubs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D066D234FA7113C54494FD655F43E293 /* Debug */,
-				E3FFA028F6A8BDA7992377292755967E /* Release */,
+				DA29B8401A6CFCBE868FDC27B258A822 /* Debug */,
+				12F256A07FBF287812C34D062F1DF54F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1003,20 +868,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9DFAC8051BCA6CAA34A4B64456A383EE /* Build configuration list for PBXNativeTarget "Pods-Swift-Concurrency-TrainingTests" */ = {
+		DBFBDD6066936FE3BA64978DFA413E2C /* Build configuration list for PBXNativeTarget "Pods-Swift-Concurrency-TrainingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7F656606E9DFE5DB294B36F319A68F79 /* Debug */,
-				76C2FDE5143F673BD43D37AF036578CA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E455E1793A1987C14F63188D2CE58D66 /* Build configuration list for PBXNativeTarget "Mockingjay" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				85D51C6B28AC3A28D449A247DC8BA62C /* Debug */,
-				73DEA8E7DF785154A9ABFA21C20BC076 /* Release */,
+				9658B8EFE073D1B930C881D4E8C1B0B7 /* Debug */,
+				8250D405200A50892153BE1C63748951 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -10,7 +10,7 @@ target 'Swift-Concurrency-Training' do
   target 'Swift-Concurrency-TrainingTests' do
     inherit! :search_paths
     # Pods for testing
-    pod 'Mockingjay'
+      pod 'OHHTTPStubs/Swift'
   end
 
 end
