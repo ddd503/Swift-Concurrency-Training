@@ -9,14 +9,20 @@ import Combine
 
 final class DataListViewModel: ObservableObject {
 
-    // 使い方決める
-    enum State: String {
+    enum DataListViewState: String {
         case initialized
         case failed
         case completed
     }
 
-    @Published var dataList = ["テスト1", "テスト2", "テスト3"]
+    @Published private(set) var dataList = [User]()
+    @Published private(set) var viewState = DataListViewState.initialized
+    private let userRepository: UserRepository
+    private var fetchDataHandler: Task<Void, Never>?
+
+    init(userRepository: UserRepository = UserRepositoryImpl()) {
+        self.userRepository = userRepository
+    }
 
     func onAppear() {
         fetchTestData()
@@ -26,8 +32,19 @@ final class DataListViewModel: ObservableObject {
         fetchTestData()
     }
 
+    func cancel() {
+        fetchDataHandler?.cancel()
+    }
+
     private func fetchTestData() {
-        // repository経由でAPI叩いて適当なデータを受け取る
-        // dataListの値を更新する
+        fetchDataHandler = Task {
+            do {
+                dataList = try await userRepository.users()
+                viewState = .completed
+            } catch {
+                // fetch中にエラー発生
+                viewState = .failed
+            }
+        }
     }
 }

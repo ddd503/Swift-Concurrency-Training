@@ -14,7 +14,7 @@ protocol UserRepository {
 struct UserRepositoryImpl: UserRepository {
     private let apiClient: UserAPIClient
 
-    init(apiClient: UserAPIClient) {
+    init(apiClient: UserAPIClient = UserAPIClientImpl()) {
         self.apiClient = apiClient
     }
 

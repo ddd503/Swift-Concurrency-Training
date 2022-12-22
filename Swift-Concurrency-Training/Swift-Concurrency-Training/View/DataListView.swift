@@ -14,9 +14,7 @@ struct DataListView: View {
     var body: some View {
         ScrollView {
             LazyVStack(alignment: .leading) {
-                ForEach(viewModel.dataList, id: \.self) { data in
-                    Text(data)
-                }
+                
             }
             .padding(20)
         }
