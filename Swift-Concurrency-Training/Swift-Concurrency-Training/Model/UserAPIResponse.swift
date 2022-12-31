@@ -11,20 +11,21 @@ struct UserAPIResponse: Decodable {
     let users: [User]
 }
 
-struct User: Decodable {
+// idはHashableである必要がある
+struct User: Decodable, Identifiable {
     let id: ID
     let name: String
     let birthDay: String
 
-    struct ID: Decodable {
+    struct ID: Decodable, Hashable {
         let rawValue: Int
     }
 }
 
-extension UserAPIResponse {
-    static func mock() -> UserAPIResponse {
-        let id = User.ID(rawValue: 0)
-        let user = User(id: id, name: "name", birthDay: "1992/05/31")
-        return UserAPIResponse(users: [user])
+extension User {
+    static func mockUsers() -> [User] {
+        return [User(id: User.ID(rawValue: 0), name: "User1", birthDay: "1992/05/31"),
+                User(id: User.ID(rawValue: 1), name: "User2", birthDay: "1991/10/20"),
+                User(id: User.ID(rawValue: 2), name: "User3", birthDay: "2021/12/04")]
     }
 }

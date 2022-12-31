@@ -11,7 +11,7 @@ import SwiftUI
 struct Swift_Concurrency_TrainingApp: App {
     var body: some Scene {
         WindowGroup {
-//            PhotoListView(store: <#Store<PhotoListState, PhotoListAction>#>)
+            DataListView()
         }
     }
 }

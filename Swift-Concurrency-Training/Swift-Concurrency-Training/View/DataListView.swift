@@ -12,11 +12,13 @@ struct DataListView: View {
     @StateObject var viewModel = DataListViewModel()
     
     var body: some View {
-        ScrollView {
-            LazyVStack(alignment: .leading) {
-                
+        NavigationView {
+            List(viewModel.dataList) { data in
+                Text(data.name)
+            }.onAppear {
+                viewModel.onAppear()
             }
-            .padding(20)
+            .navigationTitle("User List")
         }
     }
 }

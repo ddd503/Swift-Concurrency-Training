@@ -7,6 +7,8 @@
 
 import Combine
 
+// Task内が非同期で流れているのでメインで受けるため
+@MainActor
 final class DataListViewModel: ObservableObject {
 
     enum DataListViewState: String {
@@ -15,7 +17,7 @@ final class DataListViewModel: ObservableObject {
         case completed
     }
 
-    @Published private(set) var dataList = [User]()
+    @Published private(set) var dataList = User.mockUsers()
     @Published private(set) var viewState = DataListViewState.initialized
     private let userRepository: UserRepository
     private var fetchDataHandler: Task<Void, Never>?
