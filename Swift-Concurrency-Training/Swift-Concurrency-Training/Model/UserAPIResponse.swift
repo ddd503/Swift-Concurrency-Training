@@ -24,8 +24,14 @@ struct User: Decodable, Identifiable {
 
 extension User {
     static func mockUsers() -> [User] {
-        return [User(id: User.ID(rawValue: 0), name: "User1", birthDay: "1992/05/31"),
-                User(id: User.ID(rawValue: 1), name: "User2", birthDay: "1991/10/20"),
-                User(id: User.ID(rawValue: 2), name: "User3", birthDay: "2021/12/04")]
+        let today = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy/mm/dd"
+        return (0...50).map({ num -> User in
+            let birthDay = Calendar.current.date(byAdding: .day, value: num + 1, to: today)!
+            return User(id: User.ID(rawValue: num),
+                        name: "User\(num)",
+                        birthDay: formatter.string(from: birthDay))
+        })
     }
 }

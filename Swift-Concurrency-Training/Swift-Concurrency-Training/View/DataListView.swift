@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Combine
 
 struct DataListView: View {
     @StateObject var viewModel = DataListViewModel()
@@ -15,7 +14,8 @@ struct DataListView: View {
         NavigationView {
             List(viewModel.dataList) { data in
                 Text(data.name)
-            }.onAppear {
+            }
+            .onAppear {
                 viewModel.onAppear()
             }
             .navigationTitle("User List")
