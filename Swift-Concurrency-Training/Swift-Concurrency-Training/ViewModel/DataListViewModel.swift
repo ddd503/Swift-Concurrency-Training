@@ -18,7 +18,7 @@ final class DataListViewModel: ObservableObject {
     }
 
     @Published private(set) var dataList = User.mockUsers()
-    @Published private(set) var viewState = DataListViewState.initialized
+    @Published private(set) var viewState = DataListViewState.failed
     private let userRepository: UserRepository
     private var fetchDataHandler: Task<Void, Never>?
 
