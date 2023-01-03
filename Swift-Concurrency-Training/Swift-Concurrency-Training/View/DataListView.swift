@@ -13,12 +13,11 @@ struct DataListView: View {
     var body: some View {
         NavigationView {
             switch viewModel.viewState {
-            case .completed, .initialized:
+            case .initialized:
+                ProgressView()
+            case .completed:
                 List(viewModel.dataList) { data in
                     Text(data.name)
-                }
-                .onAppear {
-                    viewModel.onAppear()
                 }
                 .navigationTitle("User List")
             case .failed:
@@ -29,7 +28,7 @@ struct DataListView: View {
                     Text("エラー")
                         .font(.largeTitle)
                     Button("再読み込み") {
-                        print("読み込み")
+                        viewModel.onTapReloadButton()
                     }
                     .frame(width: 150, height: 50)
                     .background(.blue)
@@ -41,6 +40,9 @@ struct DataListView: View {
                     Spacer()
                 }
             }
+        }
+        .onAppear {
+            viewModel.onAppear()
         }
     }
 }
