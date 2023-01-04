@@ -20,6 +20,9 @@ struct DataListView: View {
                     Text(data.name)
                 }
                 .navigationTitle("User List")
+                .refreshable {
+                    viewModel.pullToRefresh()
+                }
             case .failed:
                 ErrorReloadView(reloadAction: {
                     viewModel.onTapReloadButton()
