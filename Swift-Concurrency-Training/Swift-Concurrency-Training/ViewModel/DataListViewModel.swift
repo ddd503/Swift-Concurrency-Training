@@ -27,22 +27,23 @@ final class DataListViewModel: ObservableObject {
     }
 
     func onAppear() {
-        fetchTestData()
+        fetchData()
     }
 
     func pullToRefresh() {
-        fetchTestData()
+        fetchData()
     }
 
     func onTapReloadButton() {
-        fetchTestData()
+        fetchData()
     }
 
     func cancel() {
         fetchDataHandler?.cancel()
+        viewState = .completed
     }
 
-    private func fetchTestData() {
+    private func fetchData() {
         fetchDataHandler = Task {
             do {
                 dataList = try await userRepository.users()
