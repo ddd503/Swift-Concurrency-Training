@@ -21,24 +21,9 @@ struct DataListView: View {
                 }
                 .navigationTitle("User List")
             case .failed:
-                VStack(spacing: 20) {
-                    Image(systemName: "xmark.octagon.fill")
-                        .resizable()
-                        .frame(width: 100, height: 100)
-                    Text("エラー")
-                        .font(.largeTitle)
-                    Button("再読み込み") {
-                        viewModel.onTapReloadButton()
-                    }
-                    .frame(width: 150, height: 50)
-                    .background(.blue)
-                    .foregroundColor(.white)
-                    .font(.title3)
-                    .cornerRadius(5)
-                    Text("読み込み中に問題が発生しました。\n再度読み込みを行なってください。")
-                        .padding(.top, 50)
-                    Spacer()
-                }
+                ErrorReloadView(reloadAction: {
+                    viewModel.onTapReloadButton()
+                }, errorMessage: "読み込み中に問題が発生しました。\n再度読み込みを行なってください。")
             }
         }
         .onAppear {
