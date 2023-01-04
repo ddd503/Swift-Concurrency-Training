@@ -11,6 +11,7 @@
 		4518F4DC29166B3100AAC676 /* UserAPIClientImplTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4518F4DB29166B3100AAC676 /* UserAPIClientImplTest.swift */; };
 		4518F4E22928754E00AAC676 /* dummy_users.json in Resources */ = {isa = PBXBuildFile; fileRef = 4518F4E12928754E00AAC676 /* dummy_users.json */; };
 		452ECA4829651A4400188FF7 /* ErrorReloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452ECA4729651A4400188FF7 /* ErrorReloadView.swift */; };
+		452ECA4A29652FD100188FF7 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452ECA4929652FD100188FF7 /* LoadingView.swift */; };
 		4557ADCB27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4557ADCA27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift */; };
 		4557ADCF27EE971D00D070BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4557ADCE27EE971D00D070BA /* Assets.xcassets */; };
 		4557ADD227EE971D00D070BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4557ADD127EE971D00D070BA /* Preview Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		4518F4DB29166B3100AAC676 /* UserAPIClientImplTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPIClientImplTest.swift; sourceTree = "<group>"; };
 		4518F4E12928754E00AAC676 /* dummy_users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dummy_users.json; sourceTree = "<group>"; };
 		452ECA4729651A4400188FF7 /* ErrorReloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorReloadView.swift; sourceTree = "<group>"; };
+		452ECA4929652FD100188FF7 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		4557ADC727EE971C00D070BA /* Swift-Concurrency-Training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Concurrency-Training.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4557ADCA27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Concurrency_TrainingApp.swift; sourceTree = "<group>"; };
 		4557ADCE27EE971D00D070BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 			children = (
 				45F3628828CB166E00C0F206 /* DataListView.swift */,
 				452ECA4729651A4400188FF7 /* ErrorReloadView.swift */,
+				452ECA4929652FD100188FF7 /* LoadingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				45F3628B28D55B9F00C0F206 /* DataListViewModel.swift in Sources */,
 				4518F4CC2903BD2D00AAC676 /* UserRepository.swift in Sources */,
 				4557ADCB27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift in Sources */,
+				452ECA4A29652FD100188FF7 /* LoadingView.swift in Sources */,
 				45C7CBE428FA58DE00B31B42 /* UserAPIResponse.swift in Sources */,
 				45C7CBE228FA56D900B31B42 /* UserAPIClient.swift in Sources */,
 			);

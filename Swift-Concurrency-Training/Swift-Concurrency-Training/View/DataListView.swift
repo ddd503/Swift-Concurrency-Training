@@ -14,7 +14,9 @@ struct DataListView: View {
         NavigationView {
             switch viewModel.viewState {
             case .loading:
-                ProgressView()
+                LoadingView {
+                    viewModel.cancel()
+                }
             case .completed:
                 List(viewModel.dataList) { data in
                     Text(data.name)
