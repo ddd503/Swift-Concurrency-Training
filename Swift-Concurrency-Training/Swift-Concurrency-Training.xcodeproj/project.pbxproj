@@ -12,13 +12,14 @@
 		4518F4E22928754E00AAC676 /* dummy_users.json in Resources */ = {isa = PBXBuildFile; fileRef = 4518F4E12928754E00AAC676 /* dummy_users.json */; };
 		452ECA4829651A4400188FF7 /* ErrorReloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452ECA4729651A4400188FF7 /* ErrorReloadView.swift */; };
 		452ECA4A29652FD100188FF7 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452ECA4929652FD100188FF7 /* LoadingView.swift */; };
+		452ECA4C29654B7000188FF7 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452ECA4B29654B7000188FF7 /* UserInfoView.swift */; };
 		4557ADCB27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4557ADCA27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift */; };
 		4557ADCF27EE971D00D070BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4557ADCE27EE971D00D070BA /* Assets.xcassets */; };
 		4557ADD227EE971D00D070BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4557ADD127EE971D00D070BA /* Preview Assets.xcassets */; };
 		45C7CBE228FA56D900B31B42 /* UserAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C7CBE128FA56D800B31B42 /* UserAPIClient.swift */; };
 		45C7CBE428FA58DE00B31B42 /* UserAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C7CBE328FA58DE00B31B42 /* UserAPIResponse.swift */; };
-		45F3628928CB166E00C0F206 /* DataListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3628828CB166E00C0F206 /* DataListView.swift */; };
-		45F3628B28D55B9F00C0F206 /* DataListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3628A28D55B9F00C0F206 /* DataListViewModel.swift */; };
+		45F3628928CB166E00C0F206 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3628828CB166E00C0F206 /* UserListView.swift */; };
+		45F3628B28D55B9F00C0F206 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3628A28D55B9F00C0F206 /* UserListViewModel.swift */; };
 		DF5B0572FB730D122E3BB582 /* Pods_Swift_Concurrency_Training.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8986128EE80C7BA782813C /* Pods_Swift_Concurrency_Training.framework */; };
 		FC3F8897A285B18FD911C749 /* Pods_Swift_Concurrency_TrainingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 355F1D7401598F8B9C0327FD /* Pods_Swift_Concurrency_TrainingTests.framework */; };
 /* End PBXBuildFile section */
@@ -42,14 +43,15 @@
 		4518F4E12928754E00AAC676 /* dummy_users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dummy_users.json; sourceTree = "<group>"; };
 		452ECA4729651A4400188FF7 /* ErrorReloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorReloadView.swift; sourceTree = "<group>"; };
 		452ECA4929652FD100188FF7 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		452ECA4B29654B7000188FF7 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 		4557ADC727EE971C00D070BA /* Swift-Concurrency-Training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Concurrency-Training.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4557ADCA27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Concurrency_TrainingApp.swift; sourceTree = "<group>"; };
 		4557ADCE27EE971D00D070BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4557ADD127EE971D00D070BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		45C7CBE128FA56D800B31B42 /* UserAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPIClient.swift; sourceTree = "<group>"; };
 		45C7CBE328FA58DE00B31B42 /* UserAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPIResponse.swift; sourceTree = "<group>"; };
-		45F3628828CB166E00C0F206 /* DataListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataListView.swift; sourceTree = "<group>"; };
-		45F3628A28D55B9F00C0F206 /* DataListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataListViewModel.swift; sourceTree = "<group>"; };
+		45F3628828CB166E00C0F206 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		45F3628A28D55B9F00C0F206 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		6B3F4FFE65F2B5520A9443BD /* Pods-Swift-Concurrency-TrainingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-Concurrency-TrainingTests.debug.xcconfig"; path = "Target Support Files/Pods-Swift-Concurrency-TrainingTests/Pods-Swift-Concurrency-TrainingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7B8986128EE80C7BA782813C /* Pods_Swift_Concurrency_Training.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift_Concurrency_Training.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95932335C0372E82BBDE90C4 /* Pods-Swift-Concurrency-Training.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-Concurrency-Training.debug.xcconfig"; path = "Target Support Files/Pods-Swift-Concurrency-Training/Pods-Swift-Concurrency-Training.debug.xcconfig"; sourceTree = "<group>"; };
@@ -162,9 +164,10 @@
 		45F3628328B9D25700C0F206 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				45F3628828CB166E00C0F206 /* DataListView.swift */,
+				45F3628828CB166E00C0F206 /* UserListView.swift */,
 				452ECA4729651A4400188FF7 /* ErrorReloadView.swift */,
 				452ECA4929652FD100188FF7 /* LoadingView.swift */,
+				452ECA4B29654B7000188FF7 /* UserInfoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,7 +175,7 @@
 		45F3628428B9D26200C0F206 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				45F3628A28D55B9F00C0F206 /* DataListViewModel.swift */,
+				45F3628A28D55B9F00C0F206 /* UserListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -374,9 +377,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				452ECA4C29654B7000188FF7 /* UserInfoView.swift in Sources */,
 				452ECA4829651A4400188FF7 /* ErrorReloadView.swift in Sources */,
-				45F3628928CB166E00C0F206 /* DataListView.swift in Sources */,
-				45F3628B28D55B9F00C0F206 /* DataListViewModel.swift in Sources */,
+				45F3628928CB166E00C0F206 /* UserListView.swift in Sources */,
+				45F3628B28D55B9F00C0F206 /* UserListViewModel.swift in Sources */,
 				4518F4CC2903BD2D00AAC676 /* UserRepository.swift in Sources */,
 				4557ADCB27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift in Sources */,
 				452ECA4A29652FD100188FF7 /* LoadingView.swift in Sources */,

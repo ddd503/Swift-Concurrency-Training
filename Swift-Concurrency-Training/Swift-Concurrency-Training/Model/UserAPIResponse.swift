@@ -23,7 +23,7 @@ struct User: Decodable, Identifiable {
 }
 
 extension User {
-    static func mockUsers() -> [User] {
+    static func usersMock() -> [User] {
         let today = Date()
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy/mm/dd"
@@ -33,5 +33,11 @@ extension User {
                         name: "User\(num)",
                         birthDay: formatter.string(from: birthDay))
         })
+    }
+
+    static func userMock() -> User {
+        User(id: User.ID(rawValue: 100),
+             name: "山田　太郎",
+             birthDay: "1990/05/21")
     }
 }

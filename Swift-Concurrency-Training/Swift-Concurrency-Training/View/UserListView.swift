@@ -1,5 +1,5 @@
 //
-//  DataListView.swift
+//  UserListView.swift
 //  Swift-Concurrency-Training
 //
 //  Created by kawaharadai on 2022/09/09.
@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct DataListView: View {
-    @StateObject var viewModel = DataListViewModel()
+struct UserListView: View {
+    @StateObject var viewModel = UserListViewModel()
     
     var body: some View {
         NavigationView {
@@ -18,8 +18,8 @@ struct DataListView: View {
                     viewModel.cancel()
                 }
             case .completed:
-                List(viewModel.dataList) { data in
-                    Text(data.name)
+                List(viewModel.userList) { user in
+                    UserInfoView(user: user)
                 }
                 .navigationTitle("User List")
                 .refreshable {
@@ -40,10 +40,10 @@ struct DataListView: View {
 struct DataListView_Previews: PreviewProvider {
     static var previews: some View {
         Group { // 複数端末でpreview見る
-            DataListView()
+            UserListView()
                 .previewDevice(PreviewDevice(rawValue: "iPhone 13"))
                 .previewDisplayName("iPhone 13")
-            DataListView()
+            UserListView()
                 .previewDevice(PreviewDevice(rawValue: "iPhone SE（3rd negeration）"))
                 .previewDisplayName("iPhone SE（3rd negeration）")
         }

@@ -1,5 +1,5 @@
 //
-//  DataListViewModel.swift
+//  UserListViewModel.swift
 //  Swift-Concurrency-Training
 //
 //  Created by kawaharadai on 2022/09/17.
@@ -9,7 +9,7 @@ import Combine
 
 // Task内が非同期で流れているのでメインで受けるため
 @MainActor
-final class DataListViewModel: ObservableObject {
+final class UserListViewModel: ObservableObject {
 
     enum DataListViewState: String {
         case loading
@@ -17,7 +17,7 @@ final class DataListViewModel: ObservableObject {
         case completed
     }
 
-    @Published private(set) var dataList = User.mockUsers()
+    @Published private(set) var userList = User.usersMock()
     @Published private(set) var viewState = DataListViewState.loading
     private let userRepository: UserRepository
     private var fetchDataHandler: Task<Void, Never>?
@@ -27,15 +27,15 @@ final class DataListViewModel: ObservableObject {
     }
 
     func onAppear() {
-        fetchData()
+        fetchUser()
     }
 
     func pullToRefresh() {
-        fetchData()
+        fetchUser()
     }
 
     func onTapReloadButton() {
-        fetchData()
+        fetchUser()
     }
 
     func cancel() {
@@ -43,11 +43,11 @@ final class DataListViewModel: ObservableObject {
         viewState = .completed
     }
 
-    private func fetchData() {
+    private func fetchUser() {
         viewState = .loading
         fetchDataHandler = Task {
             do {
-                dataList = try await userRepository.users()
+                userList = try await userRepository.users()
                 viewState = .completed
             } catch {
                 // fetch中にエラー発生
