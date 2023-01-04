@@ -12,13 +12,13 @@ import Combine
 final class DataListViewModel: ObservableObject {
 
     enum DataListViewState: String {
-        case initialized
+        case loading
         case failed
         case completed
     }
 
     @Published private(set) var dataList = User.mockUsers()
-    @Published private(set) var viewState = DataListViewState.initialized
+    @Published private(set) var viewState = DataListViewState.loading
     private let userRepository: UserRepository
     private var fetchDataHandler: Task<Void, Never>?
 
@@ -44,6 +44,7 @@ final class DataListViewModel: ObservableObject {
     }
 
     private func fetchData() {
+        viewState = .loading
         fetchDataHandler = Task {
             do {
                 dataList = try await userRepository.users()

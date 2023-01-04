@@ -13,7 +13,7 @@ struct DataListView: View {
     var body: some View {
         NavigationView {
             switch viewModel.viewState {
-            case .initialized:
+            case .loading:
                 ProgressView()
             case .completed:
                 List(viewModel.dataList) { data in
