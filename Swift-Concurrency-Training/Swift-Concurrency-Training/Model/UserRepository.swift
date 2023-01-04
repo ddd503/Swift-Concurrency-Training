@@ -12,17 +12,14 @@ protocol UserRepository {
 }
 
 struct UserRepositoryImpl: UserRepository {
-    private let apiClient: UserAPIClient
+    private let apiClient: APIClient
 
-    init(apiClient: UserAPIClient = UserAPIClientImpl()) {
+    init(apiClient: APIClient = APIClientImpl()) {
         self.apiClient = apiClient
     }
 
     func users() async throws -> [User] {
-        let url = URL(string: "http://localhost:3000/v1/users")!
-        var urlRequest = URLRequest(url: url)
-        urlRequest.httpMethod = "GET"
-        let users = try await apiClient.perform(request: urlRequest)
-        return users
+        let response = try await apiClient.perform(request: APIEndPoint.Users.request)
+        return try JSONDecoder().decode([User].self, from: response)
     }
 }
