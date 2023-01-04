@@ -22,11 +22,7 @@ struct UserRepositoryImpl: UserRepository {
         let url = URL(string: "http://localhost:3000/v1/users")!
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = "GET"
-        do {
-            let users = try await apiClient.perform(request: urlRequest)
-            return users
-        } catch {
-            throw error
-        }
+        let users = try await apiClient.perform(request: urlRequest)
+        return users
     }
 }
