@@ -11,14 +11,14 @@ import Combine
 @MainActor
 final class UserListViewModel: ObservableObject {
 
-    enum DataListViewState: String {
+    enum UserListViewState: String {
         case loading
         case failed
         case completed
     }
 
     @Published private(set) var userList = User.usersMock()
-    @Published private(set) var viewState = DataListViewState.loading
+    @Published private(set) var viewState = UserListViewState.loading
     private let userRepository: UserRepository
     private var fetchDataHandler: Task<Void, Never>?
 
