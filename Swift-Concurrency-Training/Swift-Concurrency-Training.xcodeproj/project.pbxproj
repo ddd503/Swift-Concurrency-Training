@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4518F4CC2903BD2D00AAC676 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4518F4CB2903BD2D00AAC676 /* UserRepository.swift */; };
 		4518F4E22928754E00AAC676 /* dummy_users.json in Resources */ = {isa = PBXBuildFile; fileRef = 4518F4E12928754E00AAC676 /* dummy_users.json */; };
+		452D7095297C0CA800AAE83D /* UserListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452D7094297C0CA800AAE83D /* UserListViewModelTest.swift */; };
 		452ECA4829651A4400188FF7 /* ErrorReloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452ECA4729651A4400188FF7 /* ErrorReloadView.swift */; };
 		452ECA4A29652FD100188FF7 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452ECA4929652FD100188FF7 /* LoadingView.swift */; };
 		452ECA4C29654B7000188FF7 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452ECA4B29654B7000188FF7 /* UserInfoView.swift */; };
@@ -42,6 +43,7 @@
 		4518F4CB2903BD2D00AAC676 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		4518F4D12916627D00AAC676 /* Swift-Concurrency-TrainingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-Concurrency-TrainingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4518F4E12928754E00AAC676 /* dummy_users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dummy_users.json; sourceTree = "<group>"; };
+		452D7094297C0CA800AAE83D /* UserListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModelTest.swift; sourceTree = "<group>"; };
 		452ECA4729651A4400188FF7 /* ErrorReloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorReloadView.swift; sourceTree = "<group>"; };
 		452ECA4929652FD100188FF7 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		452ECA4B29654B7000188FF7 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 		4518F4D22916627D00AAC676 /* Swift-Concurrency-TrainingTests */ = {
 			isa = PBXGroup;
 			children = (
+				452D7093297C0C8D00AAE83D /* ViewModel */,
 				4518F4E02928752900AAC676 /* Resource */,
 				4518F4DA29166AD100AAC676 /* Model */,
 			);
@@ -115,6 +118,14 @@
 				4518F4E12928754E00AAC676 /* dummy_users.json */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		452D7093297C0C8D00AAE83D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				452D7094297C0CA800AAE83D /* UserListViewModelTest.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		4557ADBE27EE971C00D070BA = {
@@ -376,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4590EFF129679B1E00CBA53E /* UserRepositoryTest.swift in Sources */,
+				452D7095297C0CA800AAE83D /* UserListViewModelTest.swift in Sources */,
 				452ECA522965A0C400188FF7 /* APIClientTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
