@@ -17,10 +17,10 @@ final class UserListViewModel: ObservableObject {
         case completed
     }
 
-    @Published private(set) var userList = User.usersMock()
+    @Published private(set) var userList = [User]()
     @Published private(set) var viewState = UserListViewState.loading
     private let userRepository: UserRepository
-    private var fetchDataHandler: Task<Void, Never>?
+    var fetchDataHandler: Task<Void, Never>?
 
     init(userRepository: UserRepository = UserRepositoryImpl()) {
         self.userRepository = userRepository

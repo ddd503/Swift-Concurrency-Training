@@ -20,6 +20,7 @@
 		4557ADCF27EE971D00D070BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4557ADCE27EE971D00D070BA /* Assets.xcassets */; };
 		4557ADD227EE971D00D070BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4557ADD127EE971D00D070BA /* Preview Assets.xcassets */; };
 		4590EFF129679B1E00CBA53E /* UserRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4590EFF029679B1E00CBA53E /* UserRepositoryTest.swift */; };
+		45A6375129850EFF00757DFB /* EntwineTest in Frameworks */ = {isa = PBXBuildFile; productRef = 45A6375029850EFF00757DFB /* EntwineTest */; };
 		45C7CBE428FA58DE00B31B42 /* UserAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C7CBE328FA58DE00B31B42 /* UserAPIResponse.swift */; };
 		45F3628928CB166E00C0F206 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3628828CB166E00C0F206 /* UserListView.swift */; };
 		45F3628B28D55B9F00C0F206 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3628A28D55B9F00C0F206 /* UserListViewModel.swift */; };
@@ -78,6 +79,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF5B0572FB730D122E3BB582 /* Pods_Swift_Concurrency_Training.framework in Frameworks */,
+				45A6375129850EFF00757DFB /* EntwineTest in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +257,9 @@
 			dependencies = (
 			);
 			name = "Swift-Concurrency-Training";
+			packageProductDependencies = (
+				45A6375029850EFF00757DFB /* EntwineTest */,
+			);
 			productName = "Swift-Concurrency-Training";
 			productReference = 4557ADC727EE971C00D070BA /* Swift-Concurrency-Training.app */;
 			productType = "com.apple.product-type.application";
@@ -287,6 +292,9 @@
 				Base,
 			);
 			mainGroup = 4557ADBE27EE971C00D070BA;
+			packageReferences = (
+				45A6374F29850EFF00757DFB /* XCRemoteSwiftPackageReference "Entwine" */,
+			);
 			productRefGroup = 4557ADC827EE971C00D070BA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -667,6 +675,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		45A6374F29850EFF00757DFB /* XCRemoteSwiftPackageReference "Entwine" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tcldr/Entwine";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		45A6375029850EFF00757DFB /* EntwineTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45A6374F29850EFF00757DFB /* XCRemoteSwiftPackageReference "Entwine" */;
+			productName = EntwineTest;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4557ADBF27EE971C00D070BA /* Project object */;
 }

@@ -41,6 +41,7 @@ struct DataListView_Previews: PreviewProvider {
     static var previews: some View {
         Group { // 複数端末でpreview見る
             UserListView()
+                .preferredColorScheme(.light)
                 .previewDevice(PreviewDevice(rawValue: "iPhone 13"))
                 .previewDisplayName("iPhone 13")
             UserListView()
