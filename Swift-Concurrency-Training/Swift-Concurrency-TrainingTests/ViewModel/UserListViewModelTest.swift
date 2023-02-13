@@ -11,12 +11,41 @@ import EntwineTest
 
 class UserListViewModelTest: XCTestCase {
 
-    func test_onAppear() {}
+    func test_fetchUser_取得成功() async {
+        let repoMock = UserRepositoryMock()
+        repoMock.isSuccess = true
+        let viewModel = UserListViewModel(userRepository: repoMock)
+        await viewModel.fetchUser()
+        XCTAssertEqual(viewModel.viewState, .completed)
+        XCTAssertEqual(viewModel.userList.count, 51)
+    }
 
-    func test_pullToRefresh() {}
+    func test_fetchUser_取得失敗() async {
+        let repoMock = UserRepositoryMock()
+        repoMock.isSuccess = false
+        let viewModel = UserListViewModel(userRepository: repoMock)
+        await viewModel.fetchUser()
+        XCTAssertEqual(viewModel.viewState, .failed)
+        XCTAssertEqual(viewModel.userList.count, 0)
+    }
 
-    func test_onTapReloadButton() {}
+    func test_cancel() {
+        let repoMock = UserRepositoryMock()
+        let viewModel = UserListViewModel(userRepository: repoMock)
+        viewModel.cancel()
+        XCTAssertEqual(viewModel.viewState, .completed)
+    }
 
-    func test_cancel() {}
+}
 
+class UserRepositoryMock: UserRepository {
+    var isSuccess: Bool?
+
+    func users() async throws -> [User] {
+        if isSuccess ?? false {
+            return User.usersMock()
+        } else {
+            throw NSError(domain: "test", code: 999)
+        }
+    }
 }

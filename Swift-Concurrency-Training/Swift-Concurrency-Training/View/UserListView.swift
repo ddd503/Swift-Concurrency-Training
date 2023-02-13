@@ -9,12 +9,15 @@ import SwiftUI
 
 struct UserListView: View {
     @StateObject var viewModel = UserListViewModel()
-    
+    // structの中で状態を変更するものを定義する時は@State
+    @State var task: Task<Void, Never>?
+
     var body: some View {
         NavigationView {
             switch viewModel.viewState {
             case .loading:
                 LoadingView {
+                    task?.cancel()
                     viewModel.cancel()
                 }
             case .completed:
@@ -23,16 +26,22 @@ struct UserListView: View {
                 }
                 .navigationTitle("User List")
                 .refreshable {
-                    viewModel.pullToRefresh()
+                    task = Task {
+                        await viewModel.fetchUser()
+                    }
                 }
             case .failed:
                 ErrorReloadView(reloadAction: {
-                    viewModel.onTapReloadButton()
+                    task = Task {
+                        await viewModel.fetchUser()
+                    }
                 }, errorMessage: "読み込み中に問題が発生しました。\n再度読み込みを行なってください。")
             }
         }
         .onAppear {
-            viewModel.onAppear()
+            task = Task {
+                await viewModel.fetchUser()
+            }
         }
     }
 }
