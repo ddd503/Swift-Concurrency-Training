@@ -6,7 +6,6 @@
 //
 
 import XCTest
-import EntwineTest
 @testable import Swift_Concurrency_Training
 
 class UserListViewModelTest: XCTestCase {

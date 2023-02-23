@@ -22,7 +22,7 @@ final class UserListViewModel: ObservableObject {
         self.userRepository = userRepository
     }
 
-    func fetchUser() async {
+    @MainActor func fetchUser() async {
         viewState = .loading
         do {
             userList = try await userRepository.users()
