@@ -22,7 +22,9 @@ struct UserListView: View {
                 }
             case .completed:
                 List(viewModel.userList) { user in
-                    UserInfoView(user: user)
+                    NavigationLink(destination: UserInfoDetailView(userInfo: user)) {
+                        UserInfoView(user: user)
+                    }
                 }
                 .navigationTitle("User List")
                 .refreshable {
@@ -43,6 +45,9 @@ struct UserListView: View {
                 await viewModel.fetchUser()
             }
         }
+        .onDisappear {
+            task?.cancel()
+        }
     }
 }
 
@@ -53,6 +58,7 @@ struct DataListView_Previews: PreviewProvider {
                 .preferredColorScheme(.light)
                 .previewDevice(PreviewDevice(rawValue: "iPhone 13"))
                 .previewDisplayName("iPhone 13")
+                .previewInterfaceOrientation(.portrait)
             UserListView()
                 .previewDevice(PreviewDevice(rawValue: "iPhone SE（3rd negeration）"))
                 .previewDisplayName("iPhone SE（3rd negeration）")

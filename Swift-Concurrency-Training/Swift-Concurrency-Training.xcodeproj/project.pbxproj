@@ -19,6 +19,7 @@
 		4557ADCB27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4557ADCA27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift */; };
 		4557ADCF27EE971D00D070BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4557ADCE27EE971D00D070BA /* Assets.xcassets */; };
 		4557ADD227EE971D00D070BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4557ADD127EE971D00D070BA /* Preview Assets.xcassets */; };
+		4561904A29A7C65F000D4482 /* UserInfoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4561904929A7C65F000D4482 /* UserInfoDetailView.swift */; };
 		4590EFF129679B1E00CBA53E /* UserRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4590EFF029679B1E00CBA53E /* UserRepositoryTest.swift */; };
 		45C7CBE428FA58DE00B31B42 /* UserAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C7CBE328FA58DE00B31B42 /* UserAPIResponse.swift */; };
 		45F3628928CB166E00C0F206 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3628828CB166E00C0F206 /* UserListView.swift */; };
@@ -54,6 +55,7 @@
 		4557ADCA27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Concurrency_TrainingApp.swift; sourceTree = "<group>"; };
 		4557ADCE27EE971D00D070BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4557ADD127EE971D00D070BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4561904929A7C65F000D4482 /* UserInfoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoDetailView.swift; sourceTree = "<group>"; };
 		4590EFF029679B1E00CBA53E /* UserRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryTest.swift; sourceTree = "<group>"; };
 		45C7CBE328FA58DE00B31B42 /* UserAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPIResponse.swift; sourceTree = "<group>"; };
 		45F3628828CB166E00C0F206 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				452ECA4729651A4400188FF7 /* ErrorReloadView.swift */,
 				452ECA4929652FD100188FF7 /* LoadingView.swift */,
 				452ECA4B29654B7000188FF7 /* UserInfoView.swift */,
+				4561904929A7C65F000D4482 /* UserInfoDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 				452ECA4829651A4400188FF7 /* ErrorReloadView.swift in Sources */,
 				45F3628928CB166E00C0F206 /* UserListView.swift in Sources */,
 				452ECA4E29655DF200188FF7 /* APIClient.swift in Sources */,
+				4561904A29A7C65F000D4482 /* UserInfoDetailView.swift in Sources */,
 				45F3628B28D55B9F00C0F206 /* UserListViewModel.swift in Sources */,
 				4518F4CC2903BD2D00AAC676 /* UserRepository.swift in Sources */,
 				4557ADCB27EE971C00D070BA /* Swift_Concurrency_TrainingApp.swift in Sources */,
